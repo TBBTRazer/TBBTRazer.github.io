@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda</title>
+        <link rel="stylesheet" href="/frontend/css/style-market.css">
+        <link rel="icon" href="/frontend/images/favicons/favicon2.png">
+        <link rel="stylesheet" href="/frontend/libs/iconosItadan-v1.0/style.css">
+        <script src="/frontend/javascript/articulos.js"></script>
+	    <script src="/frontend/javascript/index.js" defer></script>
+	    <script src="/frontend/javascript/cartService.js" defer></script>
+
+        
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <!--logo-->
+                <h1>Itadan</h1>
+                <P class="subtitulo">Impresiones 3D</P>
+                    <a href="/frontend/index.html" class="logo"><img src="/frontend/images/logo/Logo_prueba6.png" alt="Logo"></a>
+                <input type="checkbox" id="menu">
+                <label for="menu"><span class="ico icomenu"></span></label>
+                <!-------->
+                <nav id="carrito">
+                    <ul>
+                        <li><a href="/frontend/index.html">Inicio</a></li>
+                        <li><a href="/frontend/html/about.html">Acerca de</a>
+                            <ul>
+                                <li><a href="/frontend/html/por-que-elegirnos.html">¿Por qué elegirnos?</a></li>
+                                <li><a href="/frontend/html/que-materiales-usamos.html">¿Que materiales usamos?</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/frontend/html/productos.html" target="_blank">Productos</a>
+                            <ul>
+                                <li><a href="/frontend/html/all_products/articulos.html">Artículos</a>
+                                    <ul>
+                                        <li><a href="/frontend/html/all_products/hogar.html">Hogar</a></li>
+                                        <li><a href="/frontend/html/all_products/exteriores-jardineria.html">Exteriores/Jardineria</a></li>
+                                        <li><a href="/frontend/html/all_products/soportes.html">Soportes</a>
+                                            <ul>
+                                                <li><a href="/frontend/html/all_products/celulares-tablets.html">Celulares/Tablets</a></li>
+                                                <li><a href="/frontend/html/all_products/auriculares.html">Auriculares</a></li>
+                                                <li><a href="/frontend/html/all_products/joysticks.html">Joysticks</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/frontend/html/all_products/bijouterie.html">Bijouterie</a></li>
+                                        <li><a href="/frontend/html/all_products/cosplay-accesorios.html">Cosplay/Accesorios</a></li>
+                                        <li><a href="/frontend/html/all_products/juegos-juegos-de-mesa.html">Juegos/Juegos de Mesa</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/frontend/html/all_products/figuras.html">Figuras</a>
+                                    <ul>
+                                        <li><a href="/frontend/html/all_products/anime.html">Anime</a>
+                                            <ul>
+                                                <li><a href="/frontend/html/all_products/dragon-ball.html">Dragon Ball</a></li>
+                                                <li><a href="/frontend/html/all_products/pokemon.html">Pokemon</a></li>
+                                                <li><a href="/frontend/html/all_products/one-piece.html">One Piece</a></li>
+                                                <li><a href="/frontend/html/all_products/naruto.html">Naruto</a></li>
+                                                <li><a href="/frontend/html/all_products/demon-slayer.html">Demon Slayer</a></li>
+                                                <li><a href="/frontend/html/all_products/sailor-moon.html">Sailor Moon</a></li>
+                                                <li><a href="/frontend/html/all_products/chainsaw-man.html">Chainsaw Man</a></li>
+                                                <li><a href="/frontend/html/all_products/jujutsu-kaisen.html">Jujutsu Kaisen</a></li>
+                                                <li><a href="/frontend/html/all_products/boku-no-hero.html">Boku No Hero</a></li>
+                                                <li><a href="/frontend/html/all_products/shingeki.html">Shingeki No Kiojin</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/frontend/html/all_products/comics.html">Comics</a>
+                                            <ul>
+                                                <li><a href="/frontend/html/all_products/dc-comic.html">DC Comics</a></li>
+                                                <li><a href="/frontend/html/all_products/marvel.html">Marvel</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/frontend/html/all_products/peliculas.html">Peliculas</a>
+                                            <ul>
+                                                <li><a href="/frontend/html/all_products/el-señor-de-los-anillos.html">El Señor de los Anillos</a></li>
+                                                <li><a href="/frontend/html/all_products/harry-potter.html">Harry Potter</a></li>
+                                                <li><a href="/frontend/html/all_products/los-juegos-del-hambre.html">Los Juegos del Hambre</a></li>
+                                                <li><a href="/frontend/html/all_products/intensamente.html">Intensamente</a></li>
+                                                <li><a href="/frontend/html/all_products/frozen.html">Frozen</a></li>
+                                                <li><a href="/frontend/html/all_products/lilo&stich.html">Lilo & Stich</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/frontend/html/all_products/videojuegos.html">Videojuegos</a>
+                                            <ul>
+                                                <li><a href="/frontend/html/all_products/league-of-legends.html">League of Legends</a></li>
+                                                <li><a href="/frontend/html/all_products/valorant.html">Valorant</a></li>
+                                                <li><a href="/frontend/html/all_products/warcraft.html">World of Warcraft</a></li>
+                                                <li><a href="/frontend/html/all_products/dark-soul.html">Dark Soul</a></li>
+                                                <li><a href="/frontend/html/all_products/resident-evil.html">Resident Evil</a></li>
+                                                <li><a href="/frontend/html/all_products/silent-hill.html">Silent Hill</a></li>
+                                                <li><a href="/frontend/html/all_products/super-mario.html">Super Mario</a></li>
+                                                <li><a href="/frontend/html/all_products/sonic.html">Sonic</a></li>
+                                                <li><a href="/frontend/html/all_products/arcade.html">Arcade</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/frontend/html/all_products/musica.html">Música</a></li>
+                                        <li><a href="/frontend/html/all_products/infantil.html">Infantil</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/frontend/html/all_products/colecciones.html">Colecciones Especiales</a></li>
+                                <li><a href="/frontend/html/all_products/materiales.html">Materiales</a>
+                                    <ul>
+                                        <li><a href="/frontend/html/all_products/filamento.html">Filamento</a>
+                                            <ul>
+                                                <li><a href="/frontend/html/all_products/pla.html">PLA</a></li>
+                                                <li><a href="/frontend/html/all_products/pla-mas.html">PLA +</a></li>
+                                                <li><a href="/frontend/html/all_products/pla-plus.html">PLA Plus</a></li>
+                                                <li><a href="/frontend/html/all_products/abs.html">ABS</a></li>
+                                                <li><a href="/frontend/html/all_products/pet-g.html">PET-G</a></li>
+                                                <li><a href="/frontend/html/all_products/flex-tpu.html">FLEX TPU</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/frontend/html/all_products/resina.html">Resina</a>
+                                            <ul>
+                                                <li><a href="/frontend/html/all_products/estandar.html">Estandar</a></li>
+                                                <li><a href="/frontend/html/all_products/dental.html">Dental</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>    
+                            </ul>
+                        </li>    
+                        <li><a href="/frontend/html/services.html">Servicios</a></li>  
+                        <li><a href="/frontend/html/contact.html">Contacto</a></li>  
+                    </ul>
+                    <!------------>
+                    <div class="search">
+                            <input type="text" placeholder="Buscar...">
+                            <button><span class="ico icosearch"></span></button>
+                    </div>
+                    <div class="idioma">
+                        <span class="ico icoearth"></span><a href="#">Español</a>
+                    </div>
+                    <div class="sesion">
+                        <span class="ico icouser"></span><a href="/frontend/html/log-in.html">Acceder</a>
+                    </div>
+                    <span>
+                        <img src="/frontend/libs/iconosItadan-v1.0/fonts/car.svg" id="img-carrito" alt="Carrito de compra">
+                        <span class="cuenta" id="cuenta-carrito">0</span>
+                        <div id="cart">
+                            <ul class="nav-card">
+                                <li>Imagen</li>
+                                <li>Nombre</li>
+                                <li>Precio</li>
+                                <li>Cantidad</li>
+                                <li></li>
+                            </ul>
+                            <div id="lista_de_productos"></div>
+                                <div id="totales">
+                                    <p>Total unidades: <span id="unidades">0</span></p>
+                                    <p>Total precio: <span id="precio">0</span></p>
+                                    <button id="comprar-producto">Iniciar Compra</button>
+                                    <button id="vaciar">Vaciar carrito</button>
+                                </div>
+                        </div>
+                    </span>
+                </nav>
+                
+            </div>
+        </header>
+        
+
+        <div class="imagen-titulo">
+            <img src="/frontend/images/logo/Logo_prueba6.png" alt="Logo">
+        </div>
+        <h2>Itadan Tienda</h2>
+        <div class="orden-precios">
+            <span class="ini"><a href="/frontend/index.html">Inicio</a>/Productos</span>
+            <span>Ordenar por: <a href="#">Mas relevante</a></span> 
+        </div>
+        <div class="container-filtros">
+            <div class="categorias">
+                <h3>Categorías</h3>
+                <a href="#">Artículos</a>
+                <a href="#">Figuras</a>
+                <a href="#">Colecciones</a>
+                <a href="#">Materiales</a>
+                <a href="#">Hogar</a>
+                <a href="#">Exteriores/Jardinería</a>
+                <a href="#">Soportes</a>
+                <a href="#">Bijouterie</a>
+                <a href="#">Cosplay/Accesorios</a>
+                <a href="#">Juegos/Juegos de Mesa</a>
+                <a href="#">Anime</a>
+                <a href="#">Comics</a>
+                <a href="#">Películas</a>
+                <a href="#">Videojuegos</a>
+                <a href="#">Música</a>
+                <a href="#">Infantil</a>
+                <a href="#">Filamento</a>
+                <a href="#">Resina</a>
+            </div>
+            <div class="coleccion">
+                <h3>Colecciones</h3>
+                <a href="#">One Piece</a>
+                <a href="#">Dragon Ball</a>
+                <a href="#">Naruto</a>
+                <a href="#">Pokemon</a>
+                <a href="#">Demon Slayer</a>
+                <a href="#">Sailor Moon</a>
+                <a href="#">Chainsaw Man</a>
+                <a href="#">Jujutsu Kaisen</a>
+                <a href="#">Boku No Hero</a>
+                <a href="#">Shingeki No Kiojin</a>
+                <a href="#">Dc Comic</a>
+                <a href="#">Marvel</a>
+                <a href="#">El Señor de los Anillos</a>
+                <a href="#">Harry Potter</a>
+                <a href="#">Los Juegos del Hambre</a>
+                <a href="#">Intensamente</a>
+                <a href="#">Frozen</a>
+                <a href="#">Lilo & Stich</a>
+                <a href="#">League of Legends</a>
+                <a href="#">Valorant</a>
+                <a href="#">World of Warcraft</a>
+                <a href="#">Dark Soul</a>
+                <a href="#">Resident Evil</a>
+                <a href="#">Silent Hill</a>
+                <a href="#">Super Mario</a>
+                <a href="#">Sonic</a>
+                <a href="#">Arcade</a>
+            </div>
+            <div class="personaje">
+                <h3>Personajes</h3>
+                <a href="#">Goku</a>
+                <a href="#">Vegeta</a>
+                <a href="#">Gohan</a>
+                <a href="#">Bulma</a>
+                <a href="#">Trunks</a>
+                <a href="#">Cell</a>
+                <a href="#">Monkey D.Luffy</a>
+                <a href="#">Roronoa Zoro</a>
+                <a href="#">Sanji</a>
+                <a href="#">Ussop</a>
+                <a href="#">Nami</a>
+                <a href="#">Brook</a>
+                <a href="#">Nico Robin</a>
+                <a href="#">Jimbei</a>
+                <a href="#">Chopper</a>
+                <a href="#">Franky</a> 
+            </div>
+            <div class="edicion-especial">
+                <h3>Colecciones Especiales</h3>
+                <a href="#">Especial Gold</a>
+                <a href="#">Especial Platinum</a>
+                <a href="#">Especial Diamond</a>
+                <a href="#">Especial Silver</a>
+            </div>
+            <div class="tamaño">
+                <h3>Tamaño</h3>
+                <a href="#">Altura 13 Cm</a>
+                <a href="#">Altura 25 Cm</a>
+                <a href="#">Altura 50 Cm</a>
+            </div>
+            <div class="precio-filro">
+                <h3>Precio</h3>
+                <a href="#">Hasta $50.000</a>
+                <a href="#">$55.000 a $70.000</a>
+                <a href="#">Más de $70.000</a>
+            </div>
+            <div class="edad-recomendada">
+                <h3>Edad mínima recomendada</h3>
+                <a href="#">Menos de 8 años</a>
+                <a href="#">8 a 13 años</a>
+                <a href="#">14 años o mas</a>
+            </div>
+            <div class="otra-caracteristica">
+                <h3>Otras características</h3>
+                <a href="#">Incluye accesorios</a>
+                <a href="#">Es articulada</a>
+            </div>
+        </div>
+        <div class="grid" id="lista-productos">
+           
+        </div>
+
+    </body>
+</html>

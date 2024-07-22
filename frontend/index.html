@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Itadan Impresiones 3D</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="icon" href="images/favicons/favicon2.png">
+        <link rel="stylesheet" href="libs/iconosItadan-v1.0/style.css">
+        <link rel="stylesheet" href="libs/btn-float-whatsapp/css/fontello.css">
+	    <script src="javascript/index.js" defer></script>
+	    <script src="javascript/cartService.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <!--logo-->
+                <h1>Itadan</h1>
+                <P class="subtitulo">Impresiones 3D</P>
+                <a href="index.html" class="logo"><img src="images/logo/Logo_prueba6.png" alt="Logo"></a>
+                <input type="checkbox" id="menu">
+                <label for="menu"><span class="ico icomenu"></span></label>
+                <!-------->
+                <nav id="carrito">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="html/about.html">Acerca de</a>
+                            <ul>
+                                <li><a href="html/por-que-elegirnos.html">¿Por qué elegirnos?</a></li>
+                                <li><a href="html/que-materiales-usamos.html">¿Que materiales usamos?</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="html/productos.html" target="_blank">Productos</a>
+                            <ul>
+                                <li><a href="html/all_products/articulos.html">Artículos</a>
+                                    <ul>
+                                        <li><a href="html/all_products/hogar.html">Hogar</a></li>
+                                        <li><a href="html/all_products/exteriores-jardineria.html">Exteriores/Jardineria</a></li>
+                                        <li><a href="html/all_products/soportes.html">Soportes</a>
+                                            <ul>
+                                                <li><a href="html/all_products/celulares-tablets.html">Celulares/Tablets</a></li>
+                                                <li><a href="html/all_products/auriculares.html">Auriculares</a></li>
+                                                <li><a href="html/all_products/joysticks.html">Joysticks</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="html/all_products/bijouterie.html">Bijouterie</a></li>
+                                        <li><a href="html/all_products/cosplay-accesorios.html">Cosplay/Accesorios</a></li>
+                                        <li><a href="html/all_products/juegos-juegos-de-mesa.html">Juegos/Juegos de Mesa</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="html/all_products/figuras.html">Figuras</a>
+                                    <ul>
+                                        <li><a href="html/all_products/anime.html">Anime</a>
+                                            <ul>
+                                                <li><a href="html/all_products/dragon-ball.html">Dragon Ball</a></li>
+                                                <li><a href="html/all_products/pokemon.html">Pokemon</a></li>
+                                                <li><a href="html/all_products/one-piece.html">One Piece</a></li>
+                                                <li><a href="html/all_products/naruto.html">Naruto</a></li>
+                                                <li><a href="html/all_products/demon-slayer.html">Demon Slayer</a></li>
+                                                <li><a href="html/all_products/sailor-moon.html">Sailor Moon</a></li>
+                                                <li><a href="html/all_products/chainsaw-man.html">Chainsaw Man</a></li>
+                                                <li><a href="html/all_products/jujutsu-kaisen.html">Jujutsu Kaisen</a></li>
+                                                <li><a href="html/all_products/boku-no-hero.html">Boku No Hero</a></li>
+                                                <li><a href="html/all_products/shingeki.html">Shingeki No Kiojin</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="html/all_products/comics.html">Comics</a>
+                                            <ul>
+                                                <li><a href="html/all_products/dc-comic.html">DC Comics</a></li>
+                                                <li><a href="html/all_products/marvel.html">Marvel</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="html/all_products/peliculas.html">Peliculas</a>
+                                            <ul>
+                                                <li><a href="html/all_products/el-señor-de-los-anillos.html">El Señor de los Anillos</a></li>
+                                                <li><a href="html/all_products/harry-potter.html">Harry Potter</a></li>
+                                                <li><a href="html/all_products/los-juegos-del-hambre.html">Los Juegos del Hambre</a></li>
+                                                <li><a href="html/all_products/intensamente.html">Intensamente</a></li>
+                                                <li><a href="html/all_products/frozen.html">Frozen</a></li>
+                                                <li><a href="html/all_products/lilo&stich.html">Lilo & Stich</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="html/all_products/videojuegos.html">Videojuegos</a>
+                                            <ul>
+                                                <li><a href="html/all_products/league-of-legends.html">League of Legends</a></li>
+                                                <li><a href="html/all_products/valorant.html">Valorant</a></li>
+                                                <li><a href="html/all_products/warcraft.html">World of Warcraft</a></li>
+                                                <li><a href="html/all_products/dark-soul.html">Dark Soul</a></li>
+                                                <li><a href="html/all_products/resident-evil.html">Resident Evil</a></li>
+                                                <li><a href="html/all_products/silent-hill.html">Silent Hill</a></li>
+                                                <li><a href="html/all_products/super-mario.html">Super Mario</a></li>
+                                                <li><a href="html/all_products/sonic.html">Sonic</a></li>
+                                                <li><a href="html/all_products/arcade.html">Arcade</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="html/all_products/musica.html">Música</a></li>
+                                        <li><a href="html/all_products/infantil.html">Infantil</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="html/all_products/colecciones.html">Colecciones Especiales</a></li>
+                                <li><a href="html/all_products/materiales.html">Materiales</a>
+                                    <ul>
+                                        <li><a href="html/all_products/filamento.html">Filamento</a>
+                                            <ul>
+                                                <li><a href="html/all_products/pla.html">PLA</a></li>
+                                                <li><a href="html/all_products/pla-mas.html">PLA +</a></li>
+                                                <li><a href="html/all_products/pla-plus.html">PLA Plus</a></li>
+                                                <li><a href="html/all_products/abs.html">ABS</a></li>
+                                                <li><a href="html/all_products/pet-g.html">PET-G</a></li>
+                                                <li><a href="html/all_products/flex-tpu.html">FLEX TPU</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="html/all_products/resina.html">Resina</a>
+                                            <ul>
+                                                <li><a href="html/all_products/estandar.html">Estandar</a></li>
+                                                <li><a href="html/all_products/dental.html">Dental</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>    
+                            </ul>
+                        </li>    
+                        <li><a href="html/services.html">Servicios</a></li>  
+                        <li><a href="html/contact.html">Contacto</a></li>  
+                    </ul>
+                    <!------------>
+                    <div class="search">
+                        <input type="text" placeholder="Buscar...">
+                        <button><span class="ico icosearch"></span></button>
+                    </div>
+                    <div class="idioma">
+                        <span class="ico icoearth"></span><a href="#">Español</a>
+                    </div>
+                    <div class="sesion">
+                        <span class="ico icouser"></span><a href="html/log-in.html">Acceder</a>
+                    </div>
+                    <span>
+                        <img src="libs/iconosItadan-v1.0/fonts/car.svg" id="img-carrito" alt="Carrito de compra">
+                        <span class="cuenta" id="cuenta-carrito">0</span>
+                        <div id="cart">
+                            <ul class="nav-card">
+                                <li>Imagen</li>
+                                <li>Nombre</li>
+                                <li>Precio</li>
+                                <li>Cantidad</li>
+                                <li></li>
+                            </ul>
+                            <div id="lista_de_productos"></div>
+                                <div id="totales">
+                                    <p>Total unidades: <span id="unidades">0</span></p>
+                                    <p>Total precio: <span id="precio">0</span></p>
+                                    <button id="comprar-producto">Iniciar Compra</button>
+                                    <button id="vaciar">Vaciar carrito</button>
+                                </div>
+                        </div>
+                    </span>
+                </nav>
+                
+            </div>
+        </header>
+        
+        <div class="swiper swiper-hero">
+            
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide"><img src="images/slider/image_prueba_2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slider/image_prueba_1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slider/image_prueba_3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slider/image_prueba_4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/slider/image_prueba_5.jpg" alt=""></div>
+                
+            </div>
+            
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+        </div>
+        
+        
+        
+        <section class="servicios">
+            <h2>Servicios de Impresión 3D</h2>
+        </section>   
+        <section class="columnas_container"> 
+            <div class="columnas">
+                <div class="iconos">
+                    <img src="images/iconos_servicios/ideas2.png" alt="Materializamos ideas"> 
+                </div>  
+                <h3>Imprimimos tus ideas</h3>    
+                <p>
+                    Nuestro equipo de diseño está a tu disposición para ayudarte a materializar esa idea que tienes en mente para tu proyecto y nos aseguramos de que sea funcional y estéticamente de calidad.
+                </p>
+            </div>
+            <div class="columnas">
+                <div class="iconos">
+                    <img src="images/iconos_servicios/industrial.png" alt="Impresiones Industriales"> 
+                </div>       
+                <h3>Impresiones industriales</h3>
+                <p>
+                    Realizamos trabajos con materiales para ingeniería y mantenimiento industrial, logrando hacer piezas que realmente sean útiles en base a su función.
+                </p>
+            </div>
+        </section> 
+        <section class="columnas_container">    
+            <div class="columnas">
+                <div class="iconos">
+                    <img src="images/iconos_servicios/joyeria.png" alt="Creamos joyas"> 
+                </div>
+                <h3>Creadores de joyas</h3>
+                <p>
+                    Nuestro equipo realiza todo tipo de trabajos de joyería en 3D personalizada, contando con impresoras dedicadas exclusivamente a este nicho. Fabricamos moldes para su creación facilitando el desarrollo de piezas en lotes grandes y de manera sostenible.
+                </p>
+                
+            </div> 
+            <div class="columnas">
+                <div class="iconos">
+                    <img src="images/iconos_servicios/dental.png" alt="Prótesis dentales"> 
+                </div>
+                <h3>Impresiones dentales</h3>
+                <p>
+                    Contamos con impresoras especiales para trabajar con resina biocompatible y asi crear moldes dentales, prótesis, guías quirúrgicas y todo tipo de piezas necesarias para el rubro odontológico. 
+                </p>
+            </div>
+        </section>   
+        <section class="columnas_container">  
+            <div class="columnas">
+                <div class="iconos">
+                    <img src="images/iconos_servicios/prototipos.png" alt="Prototipos"> 
+                </div>
+                <h3>Prototipos</h3>
+                <p>
+                    Hacemos fabricación en serie de modelos para su testeo asi el cliente puede modificarlo en caso de ser necesario de forma rápida y asegurar que el diseño final sea lo esperado.
+                </p>
+            </div> 
+            <div class="columnas">
+                <div class="iconos">
+                    <img src="images/iconos_servicios/3d-scanner.png" alt="Escaneo láser 3D"> 
+                </div>
+                <h3>Escaneo láser 3D</h3>
+                <p>
+                    Ofrecemos el servicio de escaneo 3D para obtener exactamente los archivos que andas buscando siendo precisos tanto en piezas pequeñas como grandes y a nivel técnico o artístico según lo requiera el cliente.
+                </p>
+            </div> 
+        </section>
+        <section class="columnas_container">
+            <div class="columnas">
+                <div class="iconos">
+                    <img src="images/iconos_servicios/velocidad.png" alt="Velocidad de impresión"> 
+                </div>
+                <h3>Tiempo</h3>
+                <p>
+                    Nuestras máquinas de impresión se destacan por su rapidez, lo que supone un ahorro de tiempo en los pedidos personalizados y a gran escala.
+                </p>
+            </div> 
+            <div class="columnas">
+                <div class="iconos">
+                    <img src="images/iconos_servicios/soporte.png" alt="Soporte técnico"> 
+                </div>
+                <h3>Soporte</h3>
+                <p>
+                    Brindamos soporte post-venta en caso de que tengas consultas o dudas sobre alguna pieza de diseño o si es un proyecto los pasos a seguir.
+                </p>
+            </div>
+        </section>
+        
+        <div class="titulo-destacados">
+            <h2>Productos Destacados</h2>
+        </div>
+        
+        <div class="grid" id="lista-productos">
+            
+        </div> 
+        
+        <section class="redes">
+            <div class="info_ico">
+                <a href="https://api.whatsapp.com/send?phone=5491150364123" target="_blank"><span class="ico icowhatsapp1"></span></a>
+                <a href="https://www.instagram.com/itadanimpresiones3d/" target="_blank"><span class="ico icoinstagram1"></span></a>
+                <a href="#"><span class="ico icofacebook1"></span></a>
+                <a href="#"><span class="ico icotelegram1"></span></a>
+                <a href="https://www.youtube.com/channel/UCDrsLfSd1a0pCW9M1yZ77OA" target="_blank"><span class="ico icoyoutube1"></span></a>
+                <a href="https://www.tiktok.com/@itadan_3d" target="_blank"><span class="ico icotiktok"></span></a>
+            </div>
+            <div class="info_txt">
+                <h2>Seguinos en nuestras redes sociales</h2>
+            </div>
+            
+        </section>
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=5491150364123" class="btn-float-wp" target="_blank"><i class="demo-icon icon-whatsapp"></i></a>
+        </div>
+        <footer class="footer">
+            
+            <div class="container_footer">
+                <div class="box_footer">
+                    <div class="metodos-pagos">
+                        <h4>Métodos de Pago</h4>
+                        
+                        <div class="logos_pagos">
+                            <img src="images/logos_pagos/visa.png" alt="Visa">
+                            <img src="images/logos_pagos/mastercard.png" alt="Master Card">
+                            <img src="images/logos_pagos/amex.png" alt="American Express">
+                            <img src="images/logos_pagos/mercadopago.png" alt="Mercado Pago">
+                            <img src="images/logos_pagos/uala.png" alt="Uala">
+                            <img src="images/logos_pagos/PP.png" alt="Paypal">
+                            <img src="images/logos_pagos/payoneer.png" alt="Payoneer">
+                            <img src="images/logos_pagos/tether.png" alt="Theter">
+                            <img src="images/logos_pagos/bitcoin.png" alt="Bitcoin">
+                            <img src="images/logos_pagos/ether.png" alt="Ethereum">
+                        </div>
+                        
+                    </div>
+                    <div class="metodos-envios">
+                        <h4>Métodos de Envío</h4>
+                        
+                        <div class="logos_pagos">
+                            <img src="images/logos_envios/correo_arg.png" alt="Correo Argentino">
+                            <img src="images/logos_envios/andreani.png" alt="Andreani">
+                            <img src="images/logos_envios/pedidos_ya.png" alt="Pedidos Ya">
+                            <img src="images/logos_envios/fedex.png" alt="Fedex">
+                            <img src="images/logos_envios/dhl.png" alt="DHL">
+                            <img src="images/logos_envios/ups.png" alt="UPS">
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="box_footer">
+                    <h2>Empresa</h2>
+                    <a href="html/about.html">Acerca de</a>
+                    <a href="html/por-que-elegirnos.html">¿Por qué elegirnos?</a>
+                    <a href="html/que-materiales-usamos.html">¿Que materiales usamos?</a>
+                    <a href="html/services.html">Servicios</a>
+                    <a href="html/terms-of-use.html">Términos y condiciones de uso</a>
+                    <a href="html/privacy-policy.html">Política de privacidad</a>
+                    <a href="html/cookies-policy.html">Política de cookies</a>
+                </div>
+                
+                <div class="box_footer">
+                    <h2>Enlaces de Interés</h2>
+                    <a href="html/all_products/articulos.html">Artículos</a>
+                    <a href="html/all_products/figuras.html">Figuras</a>
+                    <a href="html/all_products/colecciones.html">Colecciones</a>
+                    <a href="html/all_products/materiales.html">Materiales</a>
+                </div>
+                
+                <div class="box_footer">
+                    <h2>Contacto</h2>
+                    <span class="ico icogmail">
+                        <a href="mailto:itadanimpresiones3d@gmail.com">itadanimpresiones3d@gmail.com</a>
+                    </span>
+                    <span class="ico icowhatsapp1">
+                        <a href="https://api.whatsapp.com/send?phone=5491150364123" class="btn-whatsapp" target="_blank">Whatsapp</a>
+                    </span>
+                    <span class="ico icotelegram1">
+                        <a href="#">Telegram</a>
+                    </span>
+                    <span class="ico icoclipboard-text1">
+                        <a href="#">Formulario</a>
+                    </span>
+                    <span class="ico icoblocked">
+                        <a href="#">Botón de arrepentimiento</a>
+                    </span>
+                </div>
+            </div>
+            <div class="box_copyright">
+                <hr>
+                <p>Todos los derechos Reservados © 2024
+                    <b>Daniel Morillo & Mario Gomez</b>
+                </p>
+            </div>
+        </footer>
+        
+    </body>
+    <script src="javascript/swiper-bundle.min.js"></script>   
+    <script src="javascript/articulos-destacados.js"></script>
+    <script src="javascript/slider.js"></script> 
+</html>
