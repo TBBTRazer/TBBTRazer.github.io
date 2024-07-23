@@ -15,7 +15,58 @@ html {
 body {
     background-color: rgb(234, 219, 235);
 }
+/*---------------------------------------------------*/
+.menu ul {
+    display: flex;
+}
 
+.menu ul ul {
+    display:none;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.menu ul li a:hover {
+    color: rgb(182, 142, 223);
+    
+}
+
+.menu ul li ul a:hover {
+    background-color: rgb(117, 112, 101);
+    color: rgb(255, 255, 255);
+
+}
+/*circulo*/
+.menu a span {
+    margin-left: 10px;
+}
+/*---------*/
+.menu ul li ul li ul li {
+    display: none;
+}
+
+.menu ul li:hover ul {
+    display: block;
+    position: absolute;
+    margin-left: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width:200px;;
+}
+
+.menu ul li:hover ul li ul {
+    left: 200px;
+    top: 94px;
+}
+
+.menu ul li:hover ul li ul li ul {
+    left: 200px;
+    top: 0px;
+}
 
 /*------------------->HEADER<----------------------*/
 
@@ -65,7 +116,8 @@ h1 {
     float: left;
 }
 
-.container nav ul li a {
+.menu ul li a {
+    background-color: orange;
     font-size: 15px;
     padding: 21px;
     padding-bottom: 35px;
@@ -75,18 +127,18 @@ h1 {
     
 }
 
-.container nav ul li a:hover {
+.menu ul li a:hover {
     color: rgb(182, 142, 223);
     
 }
 
-.container nav ul li ul a:hover {
+.menu ul li ul a:hover {
     background-color: rgb(117, 112, 101);
     color: rgb(255, 255, 255);
 
 }
 
-.container nav ul li ul {
+.menu ul li ul {
     
     position: absolute;
     left: 22px;
@@ -96,24 +148,24 @@ h1 {
     display: none;
 }
 
-.container nav ul li ul li a {
+.menu ul li ul li a {
     font-size: 14px;
     padding: 10px;
     
 }
 
-.container nav ul li ul li ul {
+.menu ul li ul li ul {
     position: absolute;
     top: 0px;
     left: 200px;    
 
 }
 
-.container nav ul li ul li {
+.menu ul li ul li {
     width: 100%;
 }
 
-.container nav ul li:hover > ul {
+.menu ul li:hover > ul {
     display: initial;
     
 }

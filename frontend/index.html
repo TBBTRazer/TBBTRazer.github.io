@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="libs/btn-float-whatsapp/css/fontello.css">
 	    <script src="javascript/index.js" defer></script>
 	    <script src="javascript/cartService.js" defer></script>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     </head>
     <body>
         <header>
@@ -25,20 +26,23 @@
                 <nav id="carrito">
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="html/about.html">Acerca de</a>
+                        <li><a href="#">Acerca de <span class="ico icocircle-down"></span></a>
                             <ul>
+                                <li><a href="html/about.html">¿Quienes somos?</a></li>
                                 <li><a href="html/por-que-elegirnos.html">¿Por qué elegirnos?</a></li>
                                 <li><a href="html/que-materiales-usamos.html">¿Que materiales usamos?</a></li>
                             </ul>
                         </li>
-                        <li><a href="html/productos.html" target="_blank">Productos</a>
+                        <li><a href="#">Productos <span class="ico icocircle-down"></span></a>
                             <ul>
-                                <li><a href="html/all_products/articulos.html">Artículos</a>
+                                <li><a href="html/productos.html">Todos los Productos</a></li>
+                                <li><a href="#">Artículos <span class="ico icocircle-down"></span></a>
                                     <ul>
                                         <li><a href="html/all_products/hogar.html">Hogar</a></li>
                                         <li><a href="html/all_products/exteriores-jardineria.html">Exteriores/Jardineria</a></li>
-                                        <li><a href="html/all_products/soportes.html">Soportes</a>
+                                        <li><a href="#">Soportes <span class="ico icocircle-down"></span></a>
                                             <ul>
+                                                <li><a href="html/all_products/soportes.html">Todos los soportes</a></li>
                                                 <li><a href="html/all_products/celulares-tablets.html">Celulares/Tablets</a></li>
                                                 <li><a href="html/all_products/auriculares.html">Auriculares</a></li>
                                                 <li><a href="html/all_products/joysticks.html">Joysticks</a></li>
@@ -49,10 +53,11 @@
                                         <li><a href="html/all_products/juegos-juegos-de-mesa.html">Juegos/Juegos de Mesa</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="html/all_products/figuras.html">Figuras</a>
+                                <li><a href="#">Figuras <span class="ico icocircle-down"></span></a>
                                     <ul>
-                                        <li><a href="html/all_products/anime.html">Anime</a>
+                                        <li><a href="#">Anime <span class="ico icocircle-down"></span></a>
                                             <ul>
+                                                <li><a href="html/all_products/anime.html">Todos los animes</a></li>
                                                 <li><a href="html/all_products/dragon-ball.html">Dragon Ball</a></li>
                                                 <li><a href="html/all_products/pokemon.html">Pokemon</a></li>
                                                 <li><a href="html/all_products/one-piece.html">One Piece</a></li>
@@ -65,14 +70,15 @@
                                                 <li><a href="html/all_products/shingeki.html">Shingeki No Kiojin</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="html/all_products/comics.html">Comics</a>
+                                        <li><a href="#">Comics <span class="ico icocircle-down"></span></a>
                                             <ul>
+                                                <li><a href="html/all_products/comics.html">Todos los cómics</a></li>
                                                 <li><a href="html/all_products/dc-comic.html">DC Comics</a></li>
                                                 <li><a href="html/all_products/marvel.html">Marvel</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="html/all_products/peliculas.html">Peliculas</a>
-                                            <ul>
+                                        <li><a href="#">Peliculas <span class="ico icocircle-down"></span></a>
+                                            <ul>.<li><a href="html/all_products/peliculas.html">Todas las películas</a></li>
                                                 <li><a href="html/all_products/el-señor-de-los-anillos.html">El Señor de los Anillos</a></li>
                                                 <li><a href="html/all_products/harry-potter.html">Harry Potter</a></li>
                                                 <li><a href="html/all_products/los-juegos-del-hambre.html">Los Juegos del Hambre</a></li>
@@ -81,8 +87,9 @@
                                                 <li><a href="html/all_products/lilo&stich.html">Lilo & Stich</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="html/all_products/videojuegos.html">Videojuegos</a>
+                                        <li><a href="#">Videojuegos <span class="ico icocircle-down"></span></a>
                                             <ul>
+                                                <li><a href="html/all_products/videojuegos.html">Todos los videojuegos</a></li>
                                                 <li><a href="html/all_products/league-of-legends.html">League of Legends</a></li>
                                                 <li><a href="html/all_products/valorant.html">Valorant</a></li>
                                                 <li><a href="html/all_products/warcraft.html">World of Warcraft</a></li>
@@ -98,10 +105,11 @@
                                         <li><a href="html/all_products/infantil.html">Infantil</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="html/all_products/colecciones.html">Colecciones Especiales</a></li>
-                                <li><a href="html/all_products/materiales.html">Materiales</a>
+                                <li><a href="#">Colecciones Especiales <span class="ico icocircle-down"></span></a></li>
+                                <li><a href="#">Materiales <span class="ico icocircle-down"></span></a>
                                     <ul>
-                                        <li><a href="html/all_products/filamento.html">Filamento</a>
+                                        <li><a href="html/all_products/filamento.html">Todos los materiales</a></li>
+                                        <li><a href="#">Filamento</a>
                                             <ul>
                                                 <li><a href="html/all_products/pla.html">PLA</a></li>
                                                 <li><a href="html/all_products/pla-mas.html">PLA +</a></li>
@@ -376,4 +384,6 @@
     <script src="javascript/swiper-bundle.min.js"></script>   
     <script src="javascript/articulos-destacados.js"></script>
     <script src="javascript/slider.js"></script> 
+    <script src="/frontend/javascript/menu.js"></script>  
+
 </html>
