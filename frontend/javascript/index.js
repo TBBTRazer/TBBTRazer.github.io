@@ -10,7 +10,6 @@ function crearGridArticulos(productos){
                     <p>${producto.descripcion}</p>
                     <div class="precio">
                         <p>$${producto.precio}</p>
-                        <p class="descuento">$25000</p>
                     </div>
             <button class="agregar-carrito">Agregar al carrito</button>
             <button class="comprar">Comprar</button>
