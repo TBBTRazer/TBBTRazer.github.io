@@ -127,7 +127,7 @@ h1 {
 
 .container label {
     color: white;
-    font-size: 28px;
+    font-size: 26px;
     cursor: pointer;
     display: none;
 }
@@ -1550,7 +1550,7 @@ h1 {
 
 .container label {
     display: block;
-    margin-left: 670px;
+    margin-left: 285px;
 }
 
 
@@ -1566,7 +1566,7 @@ h1 {
 #carrito {
     position: absolute;
     top: 162px; 
-    left: 0px; 
+    left: 0px;
 }
 #carrito ul {
     position: absolute;
@@ -1575,7 +1575,6 @@ h1 {
     width: 100%;
     transform: translateX(100%);
     transition: all 0.6s;
-    background-color: #3885c4;
 }
 
 #menu:checked ~ #carrito ul {
@@ -1587,7 +1586,7 @@ h1 {
 .search {
     position: absolute;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 20px;
     margin-top: -42px;
 }
 
@@ -1598,7 +1597,7 @@ h1 {
     outline: none;
     border-radius: 15px;
     margin-right: 10px;
-    font-size: 10px;
+    font-size: 6px;
 }
 
 .search input:hover {
@@ -1606,13 +1605,13 @@ h1 {
 }
 
 .search button {
-    padding: 3.3px;
+    padding: 1px;
     background-color: rgb(182, 142, 223);
     border: 0;
     top: 0;
     bottom: 0;
     right: 0;
-    margin-left: -29px;
+    margin-left: -22px;
     border-radius: 0 15px 15px 0;
     color: #fff;
     font-size: 10px;
@@ -1620,7 +1619,7 @@ h1 {
 }
 
 .search button span {
-    font-size: 11px;
+    font-size: 8px;
 }
 
 
@@ -1672,8 +1671,8 @@ h1 {
 #img-carrito {
     position: absolute;
     height: 18px;
-    margin-top: -40px;
-    margin-left: 540px;
+    margin-top: -38px;
+    margin-left: 160px;
     cursor: pointer;
 }
 /*-----------------*/
@@ -1689,8 +1688,8 @@ span .cuenta {
     justify-content: center;
     border-radius: 50%;
     border: 1px solid #fff;
-    right: 197px;
-    bottom: 34px;
+    right: 217px;
+    bottom: 32px;
 }
 
 
@@ -1706,21 +1705,21 @@ span .cuenta {
 
 #cart {
     background-color: #ffffff;
-    max-height: 500px;
-    width: 400px;
+    max-height: 400px;
+    width: 350px;
     position: absolute;
     overflow: auto;
     border-radius: 10px;
-    top: 50px;
-    right: 0;
+    top: 0px;
+    right: 164px;
 }
 
 
 .nav-card {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     display: flex;
     justify-content: space-between;
-    margin: 0 10px 0 10px;
+    margin-left: -230px;
     border-bottom: solid thin #e1e1e1;
 }
 
@@ -1729,11 +1728,13 @@ span .cuenta {
     list-style: none;
     padding: 1rem;
     font-weight: bold;
+    margin-left: 15px;
 }
 
 #lista_de_productos {
-    width: 380px;
+    width: 370px;
     margin: auto;
+    margin-top: 35px;
 }
 
 .tarjeta-producto {
@@ -1745,7 +1746,7 @@ span .cuenta {
 }
 
 .tarjeta-producto img {
-    width: 100px;
+    width: 80px;
     margin-left: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -1753,17 +1754,17 @@ span .cuenta {
 
 .tarjeta-producto h3 {
     position: absolute;
-    margin-left: 110px;
-    width: 70px;
+    margin-left: 95px;
+    width: 60px;
     font-size: 1.3rem;
     font-weight: bold;
 }
 
 .tarjeta-producto p {
     position: absolute;
-    margin-left: 180px;
+    margin-left: 175px;
     width: 100px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -1776,7 +1777,7 @@ span .cuenta {
 
 .tarjeta-producto .contador {
     position: absolute;
-    margin-left: 255px;
+    margin-left: 235px;
     margin-top: 0px;   
 }
 
@@ -1795,10 +1796,10 @@ span .cuenta {
 
 .tarjeta-producto .elimina {
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.8rem;
     background-color: transparent;
     border: none;
-    margin-left: 5px;
+    margin-left: 8px;
     margin-top: -2px;
 } 
 
@@ -1827,7 +1828,8 @@ span .cuenta {
 
 #totales {
     background-color: #ffffff;
-    height: 20%;   
+    height: 20%;
+    margin-top: 40px;   
 }
 
 #totales p {
