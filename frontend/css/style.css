@@ -834,7 +834,7 @@ h1 {
     height: 55px;
 }
 
-.container nav .nav-ul {
+.container nav #nav-ul {
     position: absolute;
     top: 55px;
     left: 0px;
@@ -849,7 +849,7 @@ h1 {
     position: static;
 }
 
-.container nav .nav-ul li {
+.container nav #nav-ul li {
     display: block;
     width: 100%;
     border: solid 1px black;
@@ -857,31 +857,34 @@ h1 {
 
 .container nav ul li a {
     display: block;
-    padding: 15px; /* Ajusta según necesites */
+    padding: 15px; 
     margin: auto;
     text-align: left;
     color: white;
     text-decoration: none;
 }
 
-
 #carrito a span {
     display: block;
     position: absolute;
     right: 5px;
-    top: 10px;
+    top: 15px;
 }
 
 #menu:checked ~ #carrito ul {
-    transform: translateX(0%); 
+   transform: translateX(0%);
 }
 
+.submenu ul {
+    display: block;
+}
 .container nav ul li ul {
     width: 100%;
 }
 
 .container nav ul li ul li {
     width: 100%;
+    /*padding-left: 20px;*/
     background-color: rgb(76, 44, 120);
 }
 
