@@ -1,61 +1,35 @@
 //Menu-hamburguer
-$(document).ready(function() {
-    function checkWindowSize() {
-        if ($(Window).width() <= 768) {
-            // Ocultar los submenús inmediatamente después de que se cargue el documento
-            $(".submenu ul").hide();
 
-            // Agregar el evento de clic a los elementos .submenu
-            $(".submenu").click(function() {
-                // Desplegar o ocultar el submenú correspondiente con una transición
-                $(this).children("ul").slideToggle('slow'); // Puedes ajustar la velocidad ('fast', 'slow', o un número en milisegundos)
-            });
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu');
+    const navUl = document.getElementById('nav-ul');
 
-            // Evitar que el clic en los elementos ul propague hacia arriba
-            $("ul").click(function(stop) {
-                stop.stopPropagation();
-            });
+    menuToggle.addEventListener('click', function (event) {
+        event.stopPropagation(); // Evitar que el clic se propague al documento
+        // Toggle la clase 'show' para abrir o cerrar el menú
+        navUl.classList.toggle('show');
+    });
 
-            // Cerrar todos los submenús si se hace clic fuera del contenedor #nav-ul
-            $(document).click(function(event) {
-                if (!$(event.target).closest('#nav-ul').length) {
-                    $(".submenu ul").slideUp('slow');
-                }
-            });
-        } else {
-            // Si el tamaño de la ventana es mayor que 768px, no hacemos nada
-            // Aquí podrías revertir cualquier acción que hayas realizado para tamaños menores a 768px, si es necesario
+    document.addEventListener('click', function (event) {
+        // Cerrar el menú si se hace clic fuera de él y del botón de menú
+        if (navUl.classList.contains('show') && !navUl.contains(event.target) && event.target !== menuToggle) {
+            navUl.classList.remove('show');
         }
-    }
-
-    // Llamar a la función checkWindowSize al cargar la página y al redimensionar la ventana
-    checkWindowSize();
-    $(Window).resize(checkWindowSize);
+    });
 });
-
 
 
 
 //Cart-mobile
 
-$(document).ready(function () {
-    $(window).resize(function () {
-        if ($(Window).width() <= 768) {
-            $(function(){
-                $(document).on("click",function(e) {
-                   var hideCarrito = $("#cart");       
-                         if (!hideCarrito.is(e.target) && hideCarrito.has(e.target).length === 0) { 
-                        hideCarrito.slideUp();                            
-                        }
-                 });
-            
-                $("#img-carrito").on("click", function(event){
-                    $("#cart").slideToggle();
-                    event.stopImmediatePropagation();
-                });
-            });
-        } 
-    });
-});
+function toggleCart() {
+    var cart = document.getElementById('cart');
+    if (cart.style.display === '' || cart.style.display === 'none') {
+        cart.style.display = 'block';
+    } else {
+        cart.style.display = 'none';
+    }
+}
+
 
 

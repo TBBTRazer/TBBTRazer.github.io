@@ -125,7 +125,7 @@ h1 {
     display: none;
 }
 
-.container label {
+#menu {
     color: white;
     font-size: 26px;
     cursor: pointer;
@@ -821,7 +821,7 @@ h1 {
 }
 /*-------------Menu Hamburguesa-------------------*/
 
-.container label {
+#menu {
     display: block;
     margin-left: 325px;
 }
@@ -837,15 +837,14 @@ h1 {
 .container nav #nav-ul {
     position: absolute;
     top: 55px;
-    left: 0px;
+    left: 0;
     transform: translateX(-100%);
     transition: all 0.6s;
     background-color: rgb(40, 44, 44);
-    
 }
 
 .container nav li:hover ul {
-    display: none;
+    display: block;
     position: static;
 }
 
@@ -871,7 +870,7 @@ h1 {
     top: 15px;
 }
 
-#menu:checked ~ #carrito ul {
+#carrito ul.show {
    transform: translateX(0%);
 }
 
@@ -985,10 +984,6 @@ span .cuenta {
 
 #carrito span > #cart {
     display: none;
-}
-
-#carrito span:hover >#cart {
-    display: block;
 }
 
 #cart {

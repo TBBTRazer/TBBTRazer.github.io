@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="libs/btn-float-whatsapp/css/fontello.css">
 	    <script src="javascript/index.js" defer></script>
 	    <script src="javascript/cartService.js" defer></script>
-        <script src="javascript/jquery-1.11.3.min.js"></script>
     </head>
     <body>
         <header>
@@ -20,8 +19,7 @@
                 <h1>Itadan</h1>
                 <P class="subtitulo">Impresiones 3D</P>
                 <a href="index.html" class="logo"><img src="images/logo/Logo_prueba6.png" alt="Logo"></a>
-                <input type="checkbox" id="menu">
-                <label for="menu"><span class="ico icomenu"></span></label>
+                <span id="menu"><span class="ico icomenu"></span></span>
                 <!-------->
                 <nav id="carrito">
                     <ul id="nav-ul">
@@ -144,7 +142,7 @@
                         <span class="ico icouser"></span><a href="html/log-in.html">Acceder</a>
                     </div>
                     <span>
-                        <img src="libs/iconosItadan-v1.0/fonts/car.svg" id="img-carrito" alt="Carrito de compra">
+                        <img src="libs/iconosItadan-v1.0/fonts/car.svg" onclick="toggleCart()" id="img-carrito" alt="Carrito de compra">
                         <span class="cuenta" id="cuenta-carrito">0</span>
                         <div id="cart">
                             <ul class="nav-card">
