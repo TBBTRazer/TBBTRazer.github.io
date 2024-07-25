@@ -876,8 +876,9 @@ h1 {
 }
 
 .submenu ul {
-    display: block;
+    display: none;
 }
+
 .container nav ul li ul {
     width: 100%;
 }
