@@ -839,6 +839,9 @@ h1 {
 
 .container nav #nav-ul {
     position: absolute;
+    display: block;
+    height: 246px;
+    overflow-y: auto;
     top: 55px;
     left: 0;
     transform: translateX(-100%);
@@ -846,8 +849,7 @@ h1 {
     background-color: rgb(40, 44, 44);
 }
 
-.container nav li:hover ul {
-    display: block;
+.container nav #nav-ul ul {
     position: static;
 }
 
@@ -877,26 +879,25 @@ h1 {
    transform: translateX(0%);
 }
 
-.submenu ul {
-    display: none;
-}
 
 .container nav ul li ul {
-    width: 100%;
+    width:100%;
 }
 
-.container nav ul li ul li {
+.container nav ul li ul li a{
     width: 100%;
-    /*padding-left: 20px;*/
     background-color: rgb(76, 44, 120);
+    color: green;
 }
 
-.container nav ul li ul li ul li {
+.container nav ul li ul li ul li a{
     background-color: rgb(158, 99, 218);
+    color: #eeff00;
 }
 
-.container nav ul li ul li ul li ul li {
+.container nav ul li ul li ul li ul li a{
     background-color: rgb(179, 129, 230);
+    color: aqua;
 }
 
 .container nav ul li a:hover {
@@ -904,7 +905,7 @@ h1 {
 }
 
 .container nav ul li ul a:hover {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(19, 3, 3);
     color: rgb(255, 255, 255);
 }
 
