@@ -887,17 +887,17 @@ h1 {
 .container nav ul li ul li a{
     width: 100%;
     background-color: rgb(76, 44, 120);
-    color: rgb(75, 72, 72);
+    color: rgb(255, 255, 255);
 }
 
 .container nav ul li ul li ul li a{
-    background-color: rgb(158, 99, 218);
-    color: #eeff00;
+    background-color: rgb(135, 61, 209);
+    color: #ffffff;
 }
 
 .container nav ul li ul li ul li ul li a{
-    background-color: rgb(179, 129, 230);
-    color: aqua;
+    background-color: rgb(178, 121, 235);
+    color: rgb(255, 255, 255);
 }
 
 .container nav ul li a:hover {
@@ -905,7 +905,7 @@ h1 {
 }
 
 .container nav ul li ul a:hover {
-    background-color: rgb(19, 3, 3);
+    background-color: rgb(27, 27, 27);
     color: rgb(255, 255, 255);
 }
 
