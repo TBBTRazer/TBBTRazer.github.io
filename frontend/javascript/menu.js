@@ -122,13 +122,13 @@ $(document).ready(function() {
         }
     }
 
-    // Función para inicializar el comportamiento del menú
+    // Función para inicializar el menú
     function inicializarMenu() {
         var $menuToggle = $('#menu');
         var $navUl = $('#nav-ul');
 
         // Manejo del clic en el botón de menú
-        $menuToggle.on('click', function(event) {
+        $menuToggle.off('click').on('click', function(event) {
             event.stopPropagation();
             $navUl.toggleClass('show');
 
@@ -141,7 +141,7 @@ $(document).ready(function() {
         });
 
         // Manejo del clic en el documento para cerrar el menú
-        $(document).on('click', function(event) {
+        $(document).off('click.menu').on('click.menu', function(event) {
             if ($navUl.hasClass('show') && !$(event.target).closest('#nav-ul, #menu').length) {
                 $navUl.removeClass('show');
                 $('.submenu ul').slideUp();
@@ -149,7 +149,7 @@ $(document).ready(function() {
         });
 
         // Manejo del clic en los submenús
-        $('.submenu').on('click', function(event) {
+        $('.submenu').off('click.submenu').on('click.submenu', function(event) {
             event.stopPropagation();
             // Cerrar otros submenús
             $(this).siblings('.submenu').children('ul').slideUp();
@@ -158,7 +158,7 @@ $(document).ready(function() {
         });
 
         // Evitar el cierre del menú al hacer clic en cualquier `ul` dentro del `#nav-ul`
-        $('#nav-ul ul').on('click', function(event) {
+        $('#nav-ul ul').off('click.ul').on('click.ul', function(event) {
             event.stopPropagation();
         });
     }
@@ -166,8 +166,14 @@ $(document).ready(function() {
     // Función para manejar el redimensionamiento de la ventana
     function manejarRedimensionamiento() {
         if ($(window).width() < 768) {
-            // Inicializar el menú solo si el ancho de la ventana es menor a 768 píxeles
             inicializarMenu();
+        } else {
+            // Aquí puedes limpiar el menú si es necesario para pantallas más grandes
+            $('#nav-ul').removeClass('show');
+            $('.submenu ul').slideUp();
+            $(document).off('click.menu');
+            $('.submenu').off('click.submenu');
+            $('#nav-ul ul').off('click.ul');
         }
     }
 
@@ -190,3 +196,4 @@ $(document).ready(function() {
         }
     });
 });
+
