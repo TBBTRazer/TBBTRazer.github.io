@@ -184,43 +184,30 @@ h1 {
 
 
 /*-----------------------------*/
-.idioma {   
-    margin-top: 24px;
-    margin-left: 400px;
+
+.language-acceder {
+    display: flex;
+    padding: 23px;
+    margin-left: 330px;
 }
 
-.idioma span {
-    color: white;
-    font-size: 14px;
-    margin-right: 2px;
+.idioma span, .sesion span{
+   font-size: 14px;
+   color: white;
+   margin-right: 5px;
 }
 
-.idioma a {
+.idioma a, .sesion a {
     color: white;
     font-size: 15px;
 }
 
-.idioma a:hover {
+.idioma a:hover, .sesion a:hover {
     color: rgb(182, 142, 223);
 }
 
-.sesion {
-    margin-top: 24px;
-}
-
-.sesion span {
-    color: white;
-    font-size: 15px;
-    margin-right: 2px;
-}
-
-.sesion a {
-    color: white;
-    font-size: 15px;
-}
-
-.sesion a:hover {
-    color: rgb(182, 142, 223);
+.idioma {
+    margin-right: 30px;
 }
 
 /*------------------------------*/
@@ -797,7 +784,7 @@ footer {
 /*                 Responsive Celulares 375x667                 */
 /*-----------------------><-------------------------------------*/
 
-@media (max-width: 768px) {
+@media (max-width: 375px) {
    
 * {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -835,6 +822,12 @@ h1 {
 
 .container {
     height: 55px;
+    background-color: rgb(76, 44, 120);
+    width: 100vh;
+    display: flex;
+    align-items: center;
+    position: fixed; 
+    z-index: 1000; 
 }
 
 .container nav #nav-ul {
@@ -886,7 +879,7 @@ h1 {
 
 .container nav ul li ul li a{
     width: 100%;
-    background-color: rgb(76, 44, 120);
+    background-color: rgb(24, 105, 61);
     color: rgb(255, 255, 255);
 }
 
@@ -916,55 +909,43 @@ h1 {
 }
 
 /*--------------Idioma-----------------*/
-.idioma {   
-    position: absolute;
-    margin-left: -380px;
-    margin-top: -10px;
+.language-acceder {
+    display: flex;
+    padding: 23px;
+    margin-left: -400px;
+}
+
+.sesion span{
+   font-size: 13px;
+   color: white;
+   margin-right: 5px;
 }
 
 .idioma span {
-    color: white;
     font-size: 12px;
-    margin-right: 2px;
+    color: white;
+    margin-right: 5px;
 }
 
-.idioma a {
+.idioma a, .sesion a {
     color: white;
     font-size: 14px;
 }
 
-.idioma a:hover {
+.idioma a:hover, .sesion a:hover {
     color: rgb(182, 142, 223);
 }
-/*---------------Login-----------------*/
-.sesion {
-    position: absolute;
-    margin-left: -485px;
-    margin-top: -10px;  
-}
 
-.sesion span {
-    font-size: 14px;
-    color: white;
-    margin-left: 190px;
-    margin-top: -68px;
-}
-
-.sesion a {
-    color: white;
-    font-size: 14px; 
-}
-
-.sesion a:hover {
-    color: rgb(182, 142, 223);
+.idioma {
+    margin-right: 15px;
 }
 
 /*------------------------------*/
 #img-carrito {
     position: absolute;
     height: 18px;
-    margin-top: -13px;
-    margin-left: -205px;
+    margin-top: 20px;
+    margin-left: -200px;
     cursor: pointer;
 }
 /*-----------------*/
@@ -980,7 +961,7 @@ span .cuenta {
     justify-content: center;
     border-radius: 50%;
     border: 1px solid #fff;
-    right: 53px;
+    right: 48px;
     bottom: 32px;
 } 
 
