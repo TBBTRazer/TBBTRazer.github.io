@@ -87,11 +87,6 @@ function toggleCart() {
     }
 }*/
 
-
-
-
-
-
 $(document).ready(function() {
     // Función para mostrar y ocultar el carrito
     function toggleCart() {
@@ -184,4 +179,14 @@ $(document).ready(function() {
 
     // Asignar la función toggleCart al evento de clic en el botón del carrito
     $('#img-carrito').on('click', toggleCart);
+
+    // Manejar el desplazamiento de la página para ajustar el comportamiento del menú
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 0) {
+            // Opcional: manejar cambios específicos cuando se desplaza la página
+            // Por ejemplo, cerrar el menú si se está desplazando
+            $('#nav-ul').removeClass('show');
+            $('.submenu ul').slideUp();
+        }
+    });
 });
