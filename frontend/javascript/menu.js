@@ -29,49 +29,48 @@
 });*/
 
 document.addEventListener('DOMContentLoaded', function () {
-    function initMenu() {
-        const menuToggle = document.getElementById('menu');
-        const navUl = document.getElementById('nav-ul');
+    const menuToggle = document.getElementById('menu');
+    const navUl = document.getElementById('nav-ul');
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
 
-        menuToggle.addEventListener('click', function (event) {
-            event.stopPropagation();
-            navUl.classList.toggle('show');
-        });
+    function handleMenuToggle() {
+        if (mediaQuery.matches) { // Solo si la pantalla es menor o igual a 768px
+            menuToggle.addEventListener('click', function (event) {
+                event.stopPropagation();
+                navUl.classList.toggle('show');
+            });
 
-        document.addEventListener('click', function (event) {
-            if (navUl.classList.contains('show') && 
-                !navUl.contains(event.target) && event.target !== menuToggle) {
-                navUl.classList.remove('show');
-            }
-        });
+            document.addEventListener('click', function (event) {
+                if (navUl.classList.contains('show') &&
+                    !navUl.contains(event.target) && event.target !== menuToggle) {
+                    navUl.classList.remove('show');
+                }
+            });
 
-        $(".submenu").click(function(event){
-            event.stopPropagation();
-            // Cerrar otros submenus
-            $(this).siblings('.submenu').children('ul').slideUp();
-            $(this).children("ul").slideToggle();
-        });
+            $(".submenu").click(function (event) {
+                event.stopPropagation();
+                // Cerrar otros submenus
+                $(this).siblings('.submenu').children('ul').slideUp();
+                $(this).children("ul").slideToggle();
+            });
 
-        $("ul").click(function(event){
-            event.stopPropagation();
-        });
-    }
-
-    function checkScreenWidth() {
-        if (window.innerWidth < 768) {
-            initMenu();
+            $("ul").click(function (event) {
+                event.stopPropagation();
+            });
+        } else {
+            // Opcional: código para el caso cuando la pantalla es mayor a 768px
+            // Si quieres manejar el comportamiento del menú en pantallas grandes, lo puedes hacer aquí
         }
     }
 
-    // Inicializar al cargar la página
-    checkScreenWidth();
+    // Llama a la función al cargar la página
+    handleMenuToggle();
 
-    // Verificar el tamaño de la ventana cuando se redimensiona
-    window.addEventListener('resize', checkScreenWidth);
+    // Recalcular si el tamaño de la pantalla cambia
+    window.addEventListener('resize', function () {
+        handleMenuToggle();
+    });
 });
-
-
-
 
 
 
