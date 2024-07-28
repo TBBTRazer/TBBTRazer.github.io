@@ -760,7 +760,7 @@ footer {
 /*                 Responsive Celulares 375x667                 */
 /*-----------------------><-------------------------------------*/
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
    
 * {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -819,7 +819,7 @@ h1 {
     left: 0;
     transform: translateX(100%);
     transition: all 0.6s;
-    background-color: rgb(40, 44, 44);
+    background-color: rgb(4, 35, 102);
 }
 
 .container nav #nav-ul ul {
