@@ -1473,7 +1473,7 @@ footer {
 /*                 Responsive Celulares 375x667                 */
 /*-----------------------><-------------------------------------*/
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
    
     * {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
