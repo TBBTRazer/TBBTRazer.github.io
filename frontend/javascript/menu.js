@@ -29,32 +29,47 @@
 });*/
 
 document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.getElementById('menu');
-    const navUl = document.getElementById('nav-ul');
+    function initMenu() {
+        const menuToggle = document.getElementById('menu');
+        const navUl = document.getElementById('nav-ul');
 
-    menuToggle.addEventListener('click', function (event) {
-        event.stopPropagation();
-        navUl.classList.toggle('show');
-    });
+        menuToggle.addEventListener('click', function (event) {
+            event.stopPropagation();
+            navUl.classList.toggle('show');
+        });
 
-    document.addEventListener('click', function (event) {
-        if (navUl.classList.contains('show') && 
-            !navUl.contains(event.target) && event.target !== menuToggle) {
-            navUl.classList.remove('show');
+        document.addEventListener('click', function (event) {
+            if (navUl.classList.contains('show') && 
+                !navUl.contains(event.target) && event.target !== menuToggle) {
+                navUl.classList.remove('show');
+            }
+        });
+
+        $(".submenu").click(function(event){
+            event.stopPropagation();
+            // Cerrar otros submenus
+            $(this).siblings('.submenu').children('ul').slideUp();
+            $(this).children("ul").slideToggle();
+        });
+
+        $("ul").click(function(event){
+            event.stopPropagation();
+        });
+    }
+
+    function checkScreenWidth() {
+        if (window.innerWidth < 768) {
+            initMenu();
         }
-    });
+    }
 
-    $(".submenu").click(function(event){
-        event.stopPropagation();
-        // Cerrar otros submenus
-        $(this).siblings('.submenu').children('ul').slideUp();
-        $(this).children("ul").slideToggle();
-    });
+    // Inicializar al cargar la página
+    checkScreenWidth();
 
-    $("ul").click(function(event){
-        event.stopPropagation();
-    });
+    // Verificar el tamaño de la ventana cuando se redimensiona
+    window.addEventListener('resize', checkScreenWidth);
 });
+
 
 
 
