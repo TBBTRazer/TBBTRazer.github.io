@@ -808,7 +808,6 @@ footer {
         justify-content: space-between;
         padding: 30px;
         margin-left: 130px;
-        color: #333;
     }
     
     nav #nav-ul {
@@ -1567,7 +1566,7 @@ nav ul li ul {
 
 nav ul li ul li a{
     width: 100%;
-    background-color: rgb(76, 44, 120);
+    background-color: rgb(177, 156, 207);
     color: rgb(255, 255, 255);
 }
 
@@ -2229,6 +2228,12 @@ footer {
         top: 55px;
         right: 32px;
     }
+    
+    nav ul li ul li a{
+        width: 100%;
+        background-color: rgb(11, 104, 34);
+        color: rgb(255, 255, 255);
+    }
 }  
 
 
@@ -2272,6 +2277,12 @@ footer {
         right: 54px;
         bottom: 36px;
     } 
+
+    nav ul li ul li a{
+        width: 100%;
+        background-color: rgb(169, 197, 146);
+        color: rgb(255, 255, 255);
+    }
 
 }  
 
@@ -2332,6 +2343,12 @@ footer {
         border-radius: 10px;
         top: 55px;
         right: 20px;
+    }
+
+    nav ul li ul li a{
+        width: 100%;
+        background-color: rgb(180, 170, 28);
+        color: rgb(255, 255, 255);
     }
 
 }
@@ -2439,6 +2456,12 @@ footer {
          .idioma {
              margin-right: 15px;
          }
+
+         nav ul li ul li a{
+            width: 100%;
+            background-color: rgb(10, 132, 148);
+            color: rgb(255, 255, 255);
+        }
 }
 
 
@@ -2544,6 +2567,12 @@ footer {
      .idioma {
          margin-right: 15px;
      }
+
+     nav ul li ul li a{
+        width: 100%;
+        background-color: rgb(110, 19, 72);
+        color: rgb(255, 255, 255);
+    }
 
 }
 
