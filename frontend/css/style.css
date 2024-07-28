@@ -784,10 +784,15 @@ footer {
 /*                 Responsive Celulares 375x667                 */
 /*-----------------------><-------------------------------------*/
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
    
 * {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
   }
     /*------------------->HEADER<----------------------*/
 
