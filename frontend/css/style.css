@@ -2235,7 +2235,7 @@ footer {
     
     #menu {
         display: block;
-        margin-left: 329px;
+        margin-left: 375px;
     }
 
     #img-carrito {
@@ -2278,15 +2278,39 @@ footer {
     
     #menu {
         display: block;
-        margin-left: 305px;
+        margin-left: 355px;
     }
     
     /*--------------Idioma-----------------*/
     .language-acceder {
         display: flex;
         padding: 23px;
-        margin-left: -390px;
+        margin-left: -90px;
     }
+    /*-----------------*/
+    #img-carrito {
+        position: absolute;
+        height: 20px;
+        margin-top: -13px;
+        margin-left: 105px;
+        cursor: pointer;
+    }
+
+    span .cuenta {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background-color: rgb(76, 44, 120);
+        font-size: 13px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        right: 45px;
+        bottom: 36px;
+    } 
 
 }
 
@@ -2382,4 +2406,94 @@ footer {
          margin-right: 15px;
      }
 
+}
+
+@media (max-width: 375px) {
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+      h1 {
+        position: absolute;
+        font-size: 18px;
+        margin-left: 60px;
+        margin-top: -15px;
+    }
+    .subtitulo {
+        position: absolute;
+        font-size: 9px;
+        margin-left: 55px;
+        margin-top: 15px;
+    }
+    
+     /*-------------Menu Hamburguesa-------------------*/
+    
+     #menu {
+        display: block;
+        margin-left: 335px;
+    }
+    
+    /*-----------------*/
+    #img-carrito {
+        position: absolute;
+        height: 20px;
+        margin-top: -13px;
+        margin-left: 80px;
+        cursor: pointer;
+    }
+
+    span .cuenta {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background-color: rgb(76, 44, 120);
+        font-size: 13px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        right: 54px;
+        bottom: 36px;
+    } 
+
+        /*--------------Idioma-----------------*/
+        .language-acceder {
+            display: flex;
+            padding: 23px;
+            margin-left: -380px;
+        }
+    
+        .language-acceder {
+            position: absolute;
+            display: flex;
+            margin-left: -100px;
+            margin-top: -32px;
+        }
+    
+        .sesion span{
+            font-size: 12px;
+            color: white;
+            margin-right: 5px;
+         }
+         
+         .idioma span {
+             font-size: 11px;
+             color: white;
+             margin-right: 5px;
+         }
+         
+         .idioma a, .sesion a {
+             color: white;
+             font-size: 13px;
+         }
+         
+         .idioma a:hover, .sesion a:hover {
+             color: rgb(182, 142, 223);
+         }
+         
+         .idioma {
+             margin-right: 15px;
+         }
 }
