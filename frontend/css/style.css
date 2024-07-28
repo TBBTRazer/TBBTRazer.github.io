@@ -838,11 +838,11 @@ h1 {
 .container nav #nav-ul {
     position: absolute;
     display: block;
-    height: 246px;
+    height: 100vh;
     overflow-y: auto;
     top: 55px;
     left: 0;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     transition: all 0.6s;
     background-color: rgb(40, 44, 44);
 }

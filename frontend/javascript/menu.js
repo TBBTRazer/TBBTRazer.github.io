@@ -1,57 +1,64 @@
 //Menu-hamburguer
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Función para inicializar el comportamiento del menú
-    function inicializarMenu() {
-        const menuToggle = document.getElementById('menu');
-        const navUl = document.getElementById('nav-ul');
+/*document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu');
+    const navUl = document.getElementById('nav-ul');
 
-        // Manejo del clic en el botón de menú
-        menuToggle.addEventListener('click', function (event) {
-            event.stopPropagation(); // Evita que el clic se propague al documento
-            navUl.classList.toggle('show');
-        });
+    menuToggle.addEventListener('click', function (event) {
+        event.stopPropagation();
+        navUl.classList.toggle('show');
+    });
 
-        // Manejo del clic en el documento para cerrar el menú
-        document.addEventListener('click', function (event) {
-            if (navUl.classList.contains('show') &&
-                !navUl.contains(event.target) &&
-                event.target !== menuToggle) {
-                navUl.classList.remove('show');
-                // Cerrar todos los submenús al cerrar el contenedor principal
-                $('.submenu ul').slideUp();
-            }
-        });
-
-        // Manejo del clic en los submenús
-        $(".submenu").click(function(event){
-            event.stopPropagation(); // Evita que el clic se propague al documento
-            // Cerrar otros submenús
-            $(this).siblings('.submenu').children('ul').slideUp();
-            // Alternar el submenú actual
-            $(this).children("ul").slideToggle();
-        });
-
-        // Evitar el cierre del menú al hacer clic en cualquier `ul` dentro del `#nav-ul`
-        $("ul").click(function(event){
-            event.stopPropagation(); // Evita que el clic se propague al documento
-        });
-    }
-
-    // Función para manejar el redimensionamiento de la ventana
-    function manejarRedimensionamiento() {
-        if (window.innerWidth < 768) {
-            // Inicializar el menú solo si el ancho de la ventana es menor a 768 píxeles
-            inicializarMenu();
+    document.addEventListener('click', function (event) {
+        if (navUl.classList.contains('show') && 
+            !navUl.contains(event.target) && event.target !== menuToggle) {
+            navUl.classList.remove('show');
         }
-    }
+    });
 
-    // Ejecutar la función cuando la página se carga
-    manejarRedimensionamiento();
+    $(".submenu").click(function(event){
+        event.stopPropagation();
+        // Cerrar otros submenus
+        $(this).siblings('.submenu').children('ul').slideUp();
+        $(this).children("ul").slideToggle();
+    });
 
-    // Ejecutar la función cuando la ventana cambia de tamaño
-    window.addEventListener('resize', manejarRedimensionamiento);
+    $("ul").click(function(event){
+        event.stopPropagation();
+    });
+});*/
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.getElementById('menu');
+    const navUl = document.getElementById('nav-ul');
+
+    menuToggle.addEventListener('click', function (event) {
+        event.stopPropagation();
+        navUl.classList.toggle('show');
+    });
+
+    document.addEventListener('click', function (event) {
+        if (navUl.classList.contains('show') && 
+            !navUl.contains(event.target) && event.target !== menuToggle) {
+            navUl.classList.remove('show');
+        }
+    });
+
+    $(".submenu").click(function(event){
+        event.stopPropagation();
+        // Cerrar otros submenus
+        $(this).siblings('.submenu').children('ul').slideUp();
+        $(this).children("ul").slideToggle();
+    });
+
+    $("ul").click(function(event){
+        event.stopPropagation();
+    });
 });
+
+
+
+
 
 
 //Cart-mobile
@@ -85,4 +92,6 @@ function toggleCart() {
         }
     }
 }
+
+
 
