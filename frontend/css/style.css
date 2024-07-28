@@ -828,7 +828,7 @@ h1 {
 .container {
     height: 55px;
     background-color: rgb(76, 44, 120);
-    width: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     position: fixed; 
@@ -950,7 +950,7 @@ h1 {
     position: absolute;
     height: 18px;
     margin-top: 20px;
-    margin-left: -335px;
+    margin-left: -200px;
     cursor: pointer;
 }
 /*-----------------*/
@@ -966,7 +966,7 @@ span .cuenta {
     justify-content: center;
     border-radius: 50%;
     border: 1px solid #fff;
-    right: 303px;
+    right: 47px;
     bottom: 32px;
 } 
 
