@@ -2179,6 +2179,49 @@ footer {
 }
 
 /*-----------------------><-------------------------------------*/
+/*                 Responsive Celulares 414                     */
+/*-----------------------><-------------------------------------*/
+
+@media (max-width: 414px) {
+   
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+    
+    /*-------------Menu Hamburguesa-------------------*/
+    
+    #menu {
+        display: block;
+        margin-left: 375px;
+    }
+
+    #img-carrito {
+        position: absolute;
+        height: 20px;
+        margin-top: -13px;
+        margin-left: 115px;
+        cursor: pointer;
+    }
+    /*-----------------*/
+    span .cuenta {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background-color: rgb(76, 44, 120);
+        font-size: 13px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        right: 56px;
+        bottom: 36px;
+    } 
+}  
+
+
+/*-----------------------><-------------------------------------*/
 /*                 Responsive Celulares 412                     */
 /*-----------------------><-------------------------------------*/
 
@@ -2221,47 +2264,6 @@ footer {
 
 }  
 
-/*-----------------------><-------------------------------------*/
-/*                 Responsive Celulares 390                     */
-/*-----------------------><-------------------------------------*/
-
-@media (max-width: 414px) {
-   
-    * {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
-    
-    /*-------------Menu Hamburguesa-------------------*/
-    
-    #menu {
-        display: block;
-        margin-left: 375px;
-    }
-
-    #img-carrito {
-        position: absolute;
-        height: 20px;
-        margin-top: -13px;
-        margin-left: 115px;
-        cursor: pointer;
-    }
-    /*-----------------*/
-    span .cuenta {
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        background-color: rgb(76, 44, 120);
-        font-size: 13px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border: 1px solid #fff;
-        right: 56px;
-        bottom: 36px;
-    } 
-}  
 
 /*-----------------------><-------------------------------------*/
 /*                 Responsive Celulares 390                     */
@@ -2285,5 +2287,99 @@ footer {
         padding: 23px;
         margin-left: -390px;
     }
+
+}
+
+/*-----------------------><-------------------------------------*/
+/*                 Responsive Celulares 360                     */
+/*-----------------------><-------------------------------------*/
+
+@media (max-width: 360px) {
+   
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+
+    h1 {
+        position: absolute;
+        font-size: 18px;
+        margin-left: 60px;
+        margin-top: -15px;
+    }
+    .subtitulo {
+        position: absolute;
+        font-size: 9px;
+        margin-left: 55px;
+        margin-top: 15px;
+    }
+    /*-------------Menu Hamburguesa-------------------*/
+    
+    #menu {
+        display: block;
+        margin-left: 325px;
+    }
+    
+    /*-----------------*/
+    #img-carrito {
+        position: absolute;
+        height: 20px;
+        margin-top: -13px;
+        margin-left: 75px;
+        cursor: pointer;
+    }
+
+    span .cuenta {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background-color: rgb(76, 44, 120);
+        font-size: 13px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        right: 45px;
+        bottom: 36px;
+    } 
+    /*--------------Idioma-----------------*/
+    .language-acceder {
+        display: flex;
+        padding: 23px;
+        margin-left: -380px;
+    }
+
+    .language-acceder {
+        position: absolute;
+        display: flex;
+        margin-left: -100px;
+        margin-top: -32px;
+    }
+
+    .sesion span{
+        font-size: 11px;
+        color: white;
+        margin-right: 5px;
+     }
+     
+     .idioma span {
+         font-size: 10px;
+         color: white;
+         margin-right: 5px;
+     }
+     
+     .idioma a, .sesion a {
+         color: white;
+         font-size: 12px;
+     }
+     
+     .idioma a:hover, .sesion a:hover {
+         color: rgb(182, 142, 223);
+     }
+     
+     .idioma {
+         margin-right: 15px;
+     }
 
 }
