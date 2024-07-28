@@ -757,7 +757,7 @@ footer {
 
 
 /*-----------------------><-------------------------------------*/
-/*                 Responsive Celulares 375x667                 */
+/*                 Responsive Celulares 480                     */
 /*-----------------------><-------------------------------------*/
 
 @media (max-width: 480px) {
@@ -815,11 +815,11 @@ h1 {
     position: absolute;
     display: block;
     overflow: auto;
-    top: 55px;
+    top: 54px;
     left: 0;
     transform: translateX(100%);
     transition: all 0.6s;
-    background-color: rgb(4, 35, 102);
+    background-color: rgb(76, 44, 120);
 }
 
 .container nav #nav-ul ul {
@@ -1470,7 +1470,25 @@ footer {
 }
 
 /*-----------------------><-------------------------------------*/
-/*                 Responsive Celulares 375x667                 */
+/*                 Responsive Celulares 430                     */
+/*-----------------------><-------------------------------------*/
+
+@media (max-width: 430px) {
+   
+    * {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+    
+    /*-------------Menu Hamburguesa-------------------*/
+    
+    #menu {
+        display: block;
+        margin-left: 345px;
+    }
+}    
+
+/*-----------------------><-------------------------------------*/
+/*                 Responsive Celulares 400                     */
 /*-----------------------><-------------------------------------*/
 
 @media (max-width: 400px) {
@@ -1492,21 +1510,21 @@ footer {
     
     h1 {
         position: absolute;
-        font-size: 18px;
-        margin-left: 70px;
+        font-size: 17px;
+        margin-left: 65px;
         margin-top: -15px;
     }
     .container .subtitulo {
         position: absolute;
         font-size: 9px;
-        margin-left: 65px;
+        margin-left: 59px;
         margin-top: 15px;
     }
     /*-------------Menu Hamburguesa-------------------*/
     
     #menu {
         display: block;
-        margin-left: 325px;
+        margin-left: 300px;
     }
     
     
@@ -1528,7 +1546,7 @@ footer {
         position: absolute;
         display: block;
         overflow: auto;
-        top: 55px;
+        top: 54px;
         left: 0;
         transform: translateX(100%);
         transition: all 0.6s;
@@ -1605,7 +1623,7 @@ footer {
     .language-acceder {
         display: flex;
         padding: 23px;
-        margin-left: -400px;
+        margin-left: -390px;
     }
     
     .sesion span{
@@ -2180,4 +2198,4 @@ footer {
         height: 1px;
         background-color: white;
     }
-    }
+}
