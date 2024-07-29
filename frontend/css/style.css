@@ -1,211 +1,84 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    text-decoration: none;
-    list-style: none;
-}
-
-html {
-    
-    font-size: 62.5%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(234, 219, 235);
+	background: rgb(234, 219, 235);
+	font-family: sans-serif;
 }
 
-
-
-/*------------------->HEADER<----------------------*/
-
-header {
-    background-color: rgb(76, 44, 120);
-    height: 80px;
-    top: 0px;
-    margin: auto;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    position: fixed; 
-    z-index: 1000; 
+a {
+	text-decoration: none;
 }
 
 h1 {
     position: absolute;
     color: white;
     font-size: 20px;
-    margin-left: 90px;
-    margin-top: -20px;
+    margin-left: 109px;
+    margin-top: 23px;
 }
 
-.subtitulo {
+.subtitulo-logo {
     position: absolute;
     color: white;
     font-size: 11px;
-    margin-left: 81px;
-    margin-top: 15px;
+    margin-left: 100px;
+    margin-top: 45px;
 }
-/*--------Logo-----*/
 .logo img {
-    padding: 5px 0px 0px;
+	position: absolute;
     height: 70px;
-    margin-left: 5px;
-    margin-bottom: 7px;
+    margin-left: 10px;
+	margin-top: 5px;
 }
-/*-----------------*/
-.icocircle-down {
-    display: none;
-}
-
-
-nav { 
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px;
-    margin-top: -107px;
-    margin-bottom: -110px;
-    margin-left: 130px;
-    color: #333;
+/* ------------------------- */
+/* Enlaces del NAV */
+/* ------------------------- */
+.menu {
+	background: rgb(76, 44, 120);
+	padding: 5px 0;
+	margin-bottom: 20px;
+	height: 80px;
 }
 
-nav ul li {
-    position: relative;
-    float: left;
+.menu .contenedor-botones-menu {
+	/* display: flex; */
+	display: none;
+	justify-content: space-between;
 }
 
-nav ul li a {
-    font-size: 15px;
-    padding: 21px;
-    padding-bottom: 35px;
-    margin-top: 3px;
-    color: white;
-    display: block;
-    
+.menu .contenedor-botones-menu button {
+	font-size: 20px;
+	color: #fff;
+	padding: 10px 20px;
+	border: 1px solid transparent;
+	display: inline-block;
+	cursor: pointer;
+	background: none;
 }
 
-nav ul li a:hover {
-    color: rgb(182, 142, 223);
-    
+.menu .contenedor-botones-menu button:hover {
+	border: 1px solid rgba(255,255,255, .4);
 }
 
-nav ul li ul a:hover {
-    background-color: rgb(117, 112, 101);
-    color: rgb(255, 255, 255);
-
+.menu .contenedor-botones-menu .btn-menu-cerrar {
+	display: none;
 }
 
-nav ul li ul {
-    
-    position: absolute;
-    left: 22px;
-    top: 76px;
-    width: 200px;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: none;
+.menu .contenedor-botones-menu .btn-menu-cerrar.activo {
+	display: inline-block;
 }
 
-nav ul li ul li a {
-    font-size: 14px;
-    padding: 10px;
-    
-}
-
-nav ul li ul li ul {
-    position: absolute;
-    top: 0px;
-    left: 200px;    
-
-}
-
-nav ul li ul li {
-    width: 100%;
-}
-
-nav ul li:hover > ul {
-    display: initial;
-    
-}
-/*-------------Menu Hamburguesa-------------------*/
-#menu {
-    display: none;
-}
-
-#menu {
-    color: white;
-    font-size: 26px;
-    cursor: pointer;
-    display: none;
-}
-
-/*----------Barra busqueda-----------*/
-.search {
-    position: absolute;
-    align-items: center;
-    margin-left: 600px;
-    margin-top: 20px;
-}
-
-
-.search input {
-    padding: 3px;
-    border: 1px solid rgb(182, 142, 223);
-    outline: none;
-    border-radius: 15px;
-    margin-right: 10px;
-    font-size: 15px;
-}
-
-.search input:hover {
-    border: 1px solid rgb(182, 142, 223);
-}
-
-.search button {
-    padding: 3.8px;
-    background-color: rgb(182, 142, 223);
-    border: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin-left: -31px;
-    border-radius: 0 15px 15px 0;
-    color: #fff;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.search button span {
-    font-size: 13px;
-}
-
-
-/*-----------------------------*/
-
-.language-acceder {
-    display: flex;
-    padding: 23px;
-    margin-left: 330px;
-}
-
-.idioma span, .sesion span{
-   font-size: 14px;
-   color: white;
-   margin-right: 5px;
-}
-
-.idioma a, .sesion a {
-    color: white;
-    font-size: 15px;
-}
-
-.idioma a:hover, .sesion a:hover {
-    color: rgb(182, 142, 223);
-}
-
-.idioma {
-    margin-right: 30px;
+.menu .contenedor-enlaces-nav {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	margin-left: 250px;
+	margin-top: 15px;
 }
 
 /*------------------------------*/
@@ -227,18 +100,19 @@ span .cuenta {
     justify-content: center;
     border-radius: 50%;
     border: 1px solid #fff;
-    position: absolute;
-    right: 10px;
-    bottom: 45px;
+    position: relative;
+	float: right;
+    right: 30px;
+    bottom: -8px;
 }
 
 /*--------------->Elementos dentro del Carrito<------------------------*/
 
-#carrito span > #cart {
+.contenedor-enlaces-nav span > #cart {
     display: none;
 }
 
-#carrito span:hover >#cart {
+.contenedor-enlaces-nav span:hover >#cart {
     display: block;
 }
 
@@ -249,13 +123,14 @@ span .cuenta {
     position: absolute;
     overflow: auto;
     border-radius: 10px;
-    top: 50px;
+    top: 60px;
     right: 0;
+	z-index: 1001;
 }
 
 
 .nav-card {
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     display: flex;
     justify-content: space-between;
     margin: 0 10px 0 10px;
@@ -293,7 +168,7 @@ span .cuenta {
     position: absolute;
     margin-left: 110px;
     width: 70px;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     font-weight: bold;
 }
 
@@ -301,12 +176,12 @@ span .cuenta {
     position: absolute;
     margin-left: 180px;
     width: 100px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .tarjeta-producto .cantidad {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: bold;
     padding-left: 5px;
     padding-right: 5px;
@@ -319,7 +194,7 @@ span .cuenta {
 }
 
 .tarjeta-producto button {
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     border-radius: 50%;
     border-width: 1px;
@@ -333,7 +208,7 @@ span .cuenta {
 
 .tarjeta-producto .elimina {
     position: absolute;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: transparent;
     border: none;
     margin-left: 5px;
@@ -347,7 +222,7 @@ span .cuenta {
     width: 90%;
     padding: 1rem;
     margin: 10px auto;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     font-weight: bold;
     text-transform: uppercase; 
     cursor: pointer;
@@ -371,7 +246,7 @@ span .cuenta {
 #totales p {
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     margin-left: 20px;
     margin-right: 25px;
@@ -379,19 +254,223 @@ span .cuenta {
     font-weight: bold;
 }
 
+.menu .btn-departamentos {
+	color: #fff;
+	padding: 7px;
+	border-radius: 3px;
+	display: flex;
+	align-items: flex-end;
+	border: 1px solid transparent;
+	font-size: 12px;
+	cursor: default;
+}
 
-/*----------------->FIN HEADER<--------------------*/
+.menu .btn-departamentos i {
+	margin-left: 20px;
+	position: relative;
+	bottom: 3px;
+}
 
+.menu .btn-departamentos:hover {
+	border: 1px solid rgba(255,255,255, .4);
+}
+
+.menu .btn-departamentos span {
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.menu .contenedor-enlaces-nav .enlaces {
+	margin-top: -15px;
+}
+
+.menu .contenedor-enlaces-nav .enlaces .icoearth, .icouser {
+	color: white;
+}
+
+.menu .contenedor-enlaces-nav .enlaces a {
+	color: white;
+	border: 1px solid transparent;
+	padding: 7px;
+	border-radius: 3px;
+	font-size: 14px;
+}
+
+.menu .contenedor-enlaces-nav .enlaces a:hover {
+	color: rgb(182, 142, 223);
+}
+
+/* ------------------------- */
+/* GRID */
+/* ------------------------- */
+.contenedor-grid {
+	position: relative;
+}
+
+.grid {
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 5px;
+	z-index: 1000;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr;
+	grid-template-areas: "categorias subcategorias subcategorias subcategorias";
+}
+
+.grid.activo {
+	display: grid;
+}
+
+.grid::before {
+	content: "";
+	display: block;
+	background: transparent;
+	border-left: 230px solid transparent;
+	border-right: 230px solid transparent;
+	border-bottom: 230px solid #fff;
+	position: absolute;
+	top: 0px;
+	left: 65px;
+}
+
+.grid > div {
+	background: #fff;
+	box-shadow: 0px 3px 6px rgba(0,0,0,.10);
+	margin-top: 9px;
+}
+
+/* ------------------------- */
+/* Categorias */
+/* ------------------------- */
+
+.grid .btn-regresar {
+	background: #232F3E;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 3px;
+	margin: 20px;
+	font-size: 16px;
+	cursor: pointer;
+	display: none;
+}
+
+.grid .btn-regresar i {
+	margin-right: 10px;
+}
+
+.grid .categorias {
+	grid-area: categorias;
+	padding-top: 10px;
+	min-height: 300px;
+	overflow: auto;
+	z-index: 1000;
+}
+
+.grid .categorias .subtitulo {
+	display: none;
+}
+
+.grid .categorias a {
+	color: #000;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+.grid .categorias a i {
+	display: none;
+}
+
+.grid .categorias a:hover {
+	color: rgb(182, 142, 223);
+	font-weight: bold;
+}
+
+.grid .categorias a:hover i {
+	display: inline-block;
+}
+
+/* ------------------------- */
+/* Subcategorias */
+/* ------------------------- */
+
+.grid .contenedor-subcategorias {
+	grid-area: subcategorias;
+	z-index: 1000;
+}
+
+.grid .subcategoria {
+	display: none;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	height: 100%;
+}
+
+.grid .subcategoria.activo {
+	display: grid;
+}
+
+.grid .subcategoria img {
+	width: 100%;
+	vertical-align: top;
+	height: 100%;
+	object-fit: cover;
+}
+
+.grid .enlaces-subcategoria {
+	padding-top: 10px;
+	height: 100%;
+	max-height: 300px;
+	overflow: auto;
+}
+
+.grid .enlaces-subcategoria a {
+	color: #000;
+	display: block;
+	font-size: 14px;
+	padding: 10px 20px;
+}
+
+.grid .enlaces-subcategoria a:hover {
+	color: rgb(182, 142, 223);
+}
+
+.grid .subtitulo {
+	font-size: 18px;
+	font-weight: normal;
+	color: rgb(114, 32, 230);
+	padding: 10px 20px;
+}
+
+.grid .banner-subcategoria a {
+	display: block;
+	height: 100%;
+}
+
+.grid .galeria-subcategoria {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: start;
+}
+
+.grid .galeria-subcategoria a {
+	width: 50%;
+	height: 50%;
+}
 
 /*----------------->SLIDER<------------------------*/
 .swiper-hero {
-    margin-top: 0;
+    margin-top: -20px;
     width: 100%;
     max-width: 1600px;
   }
 
 .swiper-hero img {
-    margin-top: 79px;
+    margin-top: 0px;
     height: 500px;
     width: 100%;
 }
@@ -448,7 +527,7 @@ span .cuenta {
 
 .servicios {
     width: 100%;
-    margin-top: -23px;
+    margin-top: -24px;
 }
 .servicios h2 {
     text-align: center;
@@ -515,12 +594,12 @@ span .cuenta {
     background-color: #fff;
 }
 
-.grid {
+.grid-destacados {
     display: grid;
     width: 80%;
     justify-content: center;
     margin: auto;
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(231px,231px));
     padding-bottom: 50px;
     padding-top: 30px;
@@ -533,11 +612,11 @@ span .cuenta {
 }
 
 .info h3 {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .info p {
-    font-size: 1.4rem;
+    font-size: 0.9rem;
 }
 
 .info h3, .info p {
@@ -550,11 +629,11 @@ span .cuenta {
     color: rgb(32, 34, 34);
 }
 
-.info .stock {
+/*.info .stock {
     font-size: 1.2rem;
     color: #413f3f;
     
-}
+}*/
 
 .precio {
     display: flex;
@@ -563,7 +642,7 @@ span .cuenta {
 }
 
 .precio p {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .info button {
@@ -574,7 +653,7 @@ span .cuenta {
     outline: none;
     color: #ffff;
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 5px;
@@ -753,1826 +832,130 @@ footer {
     background-color: white;
 }
 
-/*-----------------------><-------------------------------------*/
-/*                 Responsive Celulares 768                     */
-/*-----------------------><-------------------------------------*/
-
-@media (max-width: 768px) {
-   
-    * {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
-    
-      body {
-        width: 100%;
-      }
-        /*------------------->HEADER<----------------------*/
-    
-    .logo img {
-        height: 50px;
-        margin-left: 5px;
-        margin-top: 2px;
-    }
-    
-    h1 {
-        position: absolute;
-        font-size: 18px;
-        margin-left: 70px;
-        margin-top: -15px;
-    }
-    .subtitulo {
-        position: absolute;
-        font-size: 9px;
-        margin-left: 65px;
-        margin-top: 15px;
-    }
-
-    header {
-        background-color: rgb(76, 44, 120);
-        height: 60px;
-        z-index: 1000; 
-    }
-    /*-------------Menu Hamburguesa-------------------*/
-    
-    #menu {
-        position: absolute;
-        display: block;
-        margin-left: 720px;
-    }
-    
-    
-    /*-------------->CARRITO/BUTTONS<-----------------*/
-    nav { 
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        padding: 30px;
-        margin-left: 130px;
-    }
-    
-    nav #nav-ul {
-        position: absolute;
-        display: block;
-        overflow: auto;
-        top: 54px;
-        left: 0;
-        transform: translateX(100%);
-        transition: all 0.6s;
-        background-color: rgb(76, 44, 120);
-    }
-    
-    nav #nav-ul ul {
-        position: static;
-    }
-    
-    nav #nav-ul li {
-        display: block;
-        width: 100%;
-        border: solid 1px black;
-    }
-    
-    nav ul li a {
-        display: block;
-        padding: 15px; 
-        margin: auto;
-        text-align: left;
-        color: white;
-        text-decoration: none;
-    }
-    
-    #carrito a span {
-        display: block;
-        position: absolute;
-        right: 5px;
-        top: 15px;
-    }
-    
-    #carrito ul.show {
-       transform: translateX(0%);
-    }
-    
-    
-    nav ul li ul {
-        width:100%;
-    }
-    
-    nav ul li ul li a{
-        width: 100%;
-        background-color: rgb(76, 44, 120);
-        color: rgb(255, 255, 255);
-    }
-    
-    nav ul li ul li ul li a{
-        background-color: rgb(135, 61, 209);
-        color: #ffffff;
-    }
-    
-    nav ul li ul li ul li ul li a{
-        background-color: rgb(178, 121, 235);
-        color: rgb(255, 255, 255);
-    }
-    
-    nav ul li a:hover {
-        color: rgb(255, 255, 255);   
-    }
-    
-    nav ul li ul a:hover {
-        background-color: rgb(27, 27, 27);
-        color: rgb(255, 255, 255);
-    }
-    
-    
-    /*----------Barra busqueda-----------*/
-    .search {
-        display: none;
-    }
-    
-    /*--------------Idioma-----------------*/
-    .language-acceder {
-        position: absolute;
-        display: flex;
-        margin-left: 200px;
-        margin-top: -30px;
-    }
-    
-    .sesion span{
-       font-size: 13px;
-       color: white;
-       margin-right: 5px;
-    }
-    
-    .idioma span {
-        font-size: 12px;
-        color: white;
-        margin-right: 5px;
-    }
-    
-    .idioma a, .sesion a {
-        color: white;
-        font-size: 14px;
-    }
-    
-    .idioma a:hover, .sesion a:hover {
-        color: rgb(182, 142, 223);
-    }
-    
-    .idioma {
-        margin-right: 15px;
-    }
-    
-    /*------------------------------*/
-    #img-carrito {
-        position: absolute;
-        height: 22px;
-        margin-top: -12px;
-        margin-left: 450px;
-        cursor: pointer;
-    }
-    /*-----------------*/
-    span .cuenta {
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        background-color: rgb(76, 44, 120);
-        font-size: 13px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border: 1px solid #fff;
-        right: 68px;
-        bottom: 32px;
-    } 
-    
-    /*--------------->Elementos dentro del Carrito<------------------------*/
-    
-    #carrito span > #cart {
-        display: none;
-    }
-    
-    #cart {
-        background-color: #ffffff;
-        max-height: 400px;
-        width: 350px;
-        position: absolute;
-        overflow-x: hidden;
-        border-radius: 10px;
-        top: 55px;
-        right: 30px;
-    }
-    
-    
-    .nav-card {
-        font-size: 1.3rem;
-        display: flex;
-        justify-content: space-between;
-        margin-left: 0px;
-        border-bottom: solid thin #e1e1e1;
-    }
-    
-    
-    .nav-card li {
-        list-style: none;
-        padding: 1rem;
-        font-weight: bold;
-        margin-right: 15px;
-        
-    }
-    
-    #lista_de_productos {
-        width: 370px;
-        margin: auto;
-        margin-top: 0px;
-    }
-    
-    .tarjeta-producto {
-        overflow: auto;
-        display: flex;
-        height: 80%;
-        align-items: center;
-        border-bottom: solid thin gray;
-    }
-    
-    .tarjeta-producto img {
-        width: 80px;
-        margin-left: 5px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    
-    .tarjeta-producto h3 {
-        position: absolute;
-        margin-left: 95px;
-        width: 60px;
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
-    
-    .tarjeta-producto p {
-        position: absolute;
-        margin-left: 175px;
-        width: 100px;
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
-    
-    .tarjeta-producto .cantidad {
-        font-size: 1.3rem;
-        font-weight: bold;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    
-    .tarjeta-producto .contador {
-        position: absolute;
-        margin-left: 235px;
-        margin-top: 0px;   
-    }
-    
-    .tarjeta-producto button {
-        font-size: 1.5rem;
-        cursor: pointer;
-        border-radius: 50%;
-        border-width: 1px;
-        border-color: rgb(182, 142, 223);
-        padding: 1px 8px;
-    }
-    
-    .tarjeta-producto button .borrar-producto {
-        color: #333;
-    }
-    
-    .tarjeta-producto .elimina {
-        position: absolute;
-        font-size: 1.8rem;
-        background-color: transparent;
-        border: none;
-        margin-left: 8px;
-        margin-top: -2px;
-    } 
-    
-    #totales button {
-        
-        background-color: rgb(255, 255, 255);
-        display: block;
-        width: 90%;
-        padding: 1rem;
-        margin: 10px auto;
-        font-size: 1.3rem;
-        font-weight: bold;
-        text-transform: uppercase; 
-        cursor: pointer;
-    }
-    
-    #totales #comprar-producto {
-        background-color: rgb(182, 142, 223);
-    }
-    
-    #totales #vaciar {
-        background-color: rgb(170, 165, 165);  
-    }
-    
-    #totales {
-        background-color: #ffffff;
-        height: 20%;
-        margin-top: 20px;   
-    }
-    
-    #totales p {
-        display: flex;
-        justify-content: space-between;
-        font-size: 1.5rem;
-        text-align: center;
-        margin-left: 20px;
-        margin-right: 25px;
-        margin-top: 5px;
-        font-weight: bold;
-    }
-    
-    /*----------------->FIN HEADER<--------------------*/
-    
-    /*----------------->SLIDER<------------------------*/
-    .swiper-hero {
-        margin-top: 0;
-        width: 100%;
-        max-width: 1600px;
-      }
-    
-    .swiper-hero img {
-        margin-top: 54px;
-        height: 200px;
-        width: 100%;
-    }
-    
-    
-    .swiper-hero .swiper-button-prev,
-    .swiper-hero .swiper-button-next {
-        --swiper-navigation-size: 10px;
-        background-color: transparent;
-        color: white;
-        height: 105px;
-        width: 50px;
-        margin-top: -35px;
-        opacity: 0;
-        transition: opacity 0.5s;
-    }
-    
-    .swiper-hero .swiper-button-prev {
-        border-radius: 20px;
-        left: 0;
-    }
-    
-    .swiper-hero .swiper-button-next {
-        border-radius: 20px;
-        right: 0;
-    }
-    
-    .swiper-hero:hover .swiper-button-prev,
-    .swiper-hero:hover .swiper-button-next {
-        opacity: 1;
-    }
-    
-    .swiper-hero .swiper-pagination {
-        --swiper-pagination-color: rgb(255, 254, 254);
-        --swiper-pagination-bullet-size: 6px;
-        --swiper-pagination-bullet-inactive-color: #000000;
-        --swiper-pagination-bullet-inactive-opacity: 0.25;
-        --swiper-pagination-bullet-opacity: 1;
-        --swiper-pagination-bullet-horizontal-gap: 8px;
-    
-    }
-    
-    .swiper-hero .swiper-pagination-bullet {
-        box-shadow: inset 0 0 0 1px #fff;
-    }
-    
-    .swiper-hero .swiper-pagination-bullet-active {
-        box-shadow: 0 0 0 1px rgb(0, 0, 0, 0.25);
-    }
-    
-    /*-----------------------><------------------------*/
-    
-    /*------------------->SERVICIOS<-------------------*/
-    
-    .servicios {
-        width: 100%;
-        margin-top: -23px;
-    }
-    .servicios h2 {
-        text-align: center;
-        font-size: 15px;
-        padding: 20px;
-        margin-top: 20px;
-        margin-bottom: 30px;
-        color: rgb(255, 255, 255);
-        background-color: rgb(76, 44, 120);
-    }
-    
-    .columnas_container {
-        margin-top: -30px;
-        margin-bottom: 0px;
-    }
-    
-    .columnas {
-        width: 95%;
-        padding: 10px 30px;
-        margin-left: 10px;
-        margin-bottom: 10px;  
-    }
-    
-    .columnas h3 {
-        font-size: 15px;
-        margin-bottom: 5px;
-        padding-left: 50px;
-    }
-    
-    .columnas p {
-        text-align: left;
-        padding-left: 50px;
-        font-size: 14px;
-    }
-    
-    .iconos img {
-        position: absolute;
-        padding: 5px 0px 0px;
-        height: 60px;
-        margin-left: -15px;
-        margin-bottom: 7px;
-        margin-top: -1px;
-    }
-    
-    /*-----------------------><------------------------*/
-    
-    /*----------------->DESTACADOS<--------------------*/
-    .titulo-destacados h2{
-        text-align: center;
-        font-size: 15px;
-        padding: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        color: rgb(255, 255, 255);
-        background-color: rgb(76, 44, 120);
-        
-    }
-    
-    #lista-productos div {
-        background-color: #fff;
-    }
-    
-    #lista-productos img {
-        height: 168px;
-    }
-    
-    .grid {
-        display: grid;
-        width: 90%;
-        justify-content: center;
-        margin: auto;
-        gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(141px,155px));
-        padding-bottom: 50px;
-        padding-top: 30px;
-        margin-top: 10px;
-    }
-    
-    
-    .info {
-        padding: 15px;
-    }
-    
-    .info h3 {
-        font-size: 1.4rem;
-    }
-    
-    .info p {
-        font-size: 1.3rem;
-    }
-    
-    .info h3, .info p {
-        color: #222;
-        margin-bottom: 15px;
-    }
-    
-    .precio p:first-child {
-        /*text-decoration: line-through;*/
-        color: rgb(32, 34, 34);
-    }
-    
-    .info .stock {
-        font-size: 1.2rem;
-        color: #413f3f;
-        
-    }
-    
-    .precio {
-        display: flex;
-        justify-content: space-between;
-        font-weight: bolder;
-    }
-    
-    .precio p {
-        font-size: 1.4rem;
-    }
-    
-    .info button {
-        padding: 1rem;
-        width: 100%;
-        background-color: rgb(76, 44, 120);
-        border: none;
-        outline: none;
-        color: #ffff;
-        text-transform: uppercase;
-        font-size: 0.9rem;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-bottom: 5px;
-    }
-    
-    .info .agregar-carrito:hover {
-        background-color:rgb(133, 58, 207);
-        transition: all .3s;
-    }
-    
-    .info .comprar:hover {
-        background-color:rgb(174, 123, 224);
-        transition: all .3s;
-    }
-    
-    /*-----------------------><------------------------*/
-    
-    /*---------------->REDES SOCIALES<-----------------*/
-    
-    .redes {
-        background-color: rgb(76, 44, 120);
-        margin-top: 20px;
-    }
-    .info_ico {
-        text-align: center;
-        padding: 20px;
-        font-size: 24px;
-    }
-    .info_ico a {
-        margin-top: 20px;
-        margin: 10px;
-    }
-    
-    .info_txt {
-        text-align: center;
-        padding: 20px;
-        color: rgb(255, 255, 255);
-        margin-top: -10px;
-    }
-    .info_txt h2 {
-        font-size: 15px;
-    }
-    
-    .icotiktok {
-        color: black;
-    }
-    
-    /*-----------------------><------------------------*/
-    
-    /*------------>Boton Flotante Whats app<-----------*/
-    
-    
-    .btn-float-wp{
-        position:fixed;
-        width:42px;
-        height:39px;
-        line-height: 41px;
-        bottom:10px;
-        right:5px;
-        background:#0df053;
-        color: #fff;
-        border-radius:50px;
-        text-align:center;
-        font-size:30px;
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-        z-index:100;
-        transition: all 300ms ease;
-    }
-    
-    
-    .btn-float-wp:hover {
-        text-decoration: none;
-        background: #0df053;
-        color: #fff;
-    }
-    
-    /*-----------------------><------------------------*/
-    
-    /*--------------------->FOOTER<--------------------*/
-    footer {
-        width: 100%;
-        padding: 10px;
-        background-color: rgb(38, 39, 39);   
-    }
-    
-    .container_footer {   
-        justify-content: space-between;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        max-width: 1200px;
-        margin-top: 50px;
-    }
-    
-    .box_footer {
-        padding: 24px;
-        margin-top: -30px;
-        margin-bottom: 50px;
-    }
-    
-    .box_footer .metodos-pagos {
-        width: 100%;
-        margin-top: -20px;
-        margin-left: 10px;
-        font-size: 14px;
-        color: white;
-    }
-    
-    .box_footer .metodos-pagos h4 {
-        font-size: 15px;
-        margin-bottom: 10px;
-        margin-top: 20px;
-        margin-left: 0px;
-        border-bottom: solid  1px white;
-        color: rgb(150, 83, 177);
-    }
-    
-    
-    .box_footer img {
-        width: 47px;
-        height: 30px;
-        margin: 5px;
-    }
-    
-    
-    
-    .box_footer h2 {
-        margin-bottom: 10px;
-        margin-top: 0px;
-        margin-left: 10px;
-        color: rgb(150, 83, 177);
-        font-size: 15px;
-    }
-    
-    .box_footer a {
-        margin-top: 16px;
-        margin-left: 10px;
-        color: white;
-        font-size: 14px;
-    }
-    
-    
-    .box_footer span {
-        margin-top: 16px;
-        
-    }
-    
-    .box_footer .ico {
-        font-size: 14px;
-        margin-left: 10px;
-        margin-right: 0;
-    }
-    
-    .box_footer .icoclipboard-text1 {
-        color: white;
-    }
-    .box_footer .icoblocked {
-        color: rgb(158, 37, 37);
-    }
-    
-    .box_footer a:hover {
-        color: rgb(182, 142, 223);
-    }
-    
-    
-    .box_copyright {
-        max-width: 1200px;
-        margin: auto;
-        text-align: center;
-        padding: 0px 40px;
-    }
-    
-    .box_copyright p {
-        margin-top: 5px;
-        color: white;
-        font-size: 8px;
-    }
-    
-    .box_copyright hr {
-        border: none;
-        height: 1px;
-        background-color: white;
-    }
-    }
-
-
- 
-
-/*-----------------------><-------------------------------------*/
-/*                 Responsive Celulares 430                     */
-/*-----------------------><-------------------------------------*/
-
-@media (max-width: 430px) {
-   
-* {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    /*border: solid 1px red;*/
-  }
-
-  body {
-    width: 100%;
-  }
-    /*------------------->HEADER<----------------------*/
-
-.logo img {
-    height: 50px;
-    margin-left: 5px;
-    margin-top: 2px;
-}
-
-h1 {
-    position: absolute;
-    font-size: 18px;
-    margin-left: 70px;
-    margin-top: -15px;
-}
-.subtitulo {
-    position: absolute;
-    font-size: 9px;
-    margin-left: 65px;
-    margin-top: 15px;
-}
-/*-------------Menu Hamburguesa-------------------*/
-
-#menu {
-    position: absolute;
-    display: block;
-    margin-left: 380px;
-}
-
-
-/*-------------->CARRITO/BUTTONS<-----------------*/
-
-
-nav #nav-ul {
-    position: absolute;
-    display: block;
-    overflow: auto;
-    top: 54px;
-    left: 0;
-    transform: translateX(100%);
-    transition: all 0.6s;
-    background-color: rgb(38, 39, 39); 
-}
-
-nav #nav-ul ul {
-    position: static;
-}
-
-nav #nav-ul li {
-    display: block;
-    width: 100%;
-    border: solid 1px black;
-}
-
-nav ul li a {
-    display: block;
-    padding: 15px; 
-    margin: auto;
-    text-align: left;
-    color: white;
-    text-decoration: none;
-}
-
-#carrito a span {
-    display: block;
-    position: absolute;
-    right: 5px;
-    top: 15px;
-}
-
-#carrito ul.show {
-   transform: translateX(0%);
-}
-
-
-nav ul li ul {
-    width:100%;
-}
-
-nav ul li ul li a{
-    width: 100%;
-    background-color: rgb(177, 156, 207);
-    color: rgb(255, 255, 255);
-}
-
-nav ul li ul li ul li a{
-    background-color: rgb(135, 61, 209);
-    color: #ffffff;
-}
-
-nav ul li ul li ul li ul li a{
-    background-color: rgb(178, 121, 235);
-    color: rgb(255, 255, 255);
-}
-
-nav ul li a:hover {
-    color: rgb(255, 255, 255);   
-}
-
-nav ul li ul a:hover {
-    background-color: rgb(27, 27, 27);
-    color: rgb(255, 255, 255);
-}
-
-
-/*----------Barra busqueda-----------*/
-.search {
-    display: none;
-}
-
-/*--------------Idioma-----------------*/
-.language-acceder {
-    position: absolute;
-    display: flex;
-    margin-left: -85px;
-    margin-top: -32px;
-}
-
-.sesion span{
-   font-size: 13px;
-   color: white;
-   margin-right: 5px;
-}
-
-.idioma span {
-    font-size: 12px;
-    color: white;
-    margin-right: 5px;
-}
-
-.idioma a, .sesion a {
-    color: white;
-    font-size: 14px;
-}
-
-.idioma a:hover, .sesion a:hover {
-    color: rgb(182, 142, 223);
-}
-
-.idioma {
-    margin-right: 15px;
-}
-
-/*------------------------------*/
-#img-carrito {
-    position: absolute;
-    height: 20px;
-    margin-top: -13px;
-    margin-left: 120px;
-    cursor: pointer;
-}
-/*-----------------*/
-span .cuenta {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background-color: rgb(76, 44, 120);
-    font-size: 13px;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    right: 66px;
-    bottom: 36px;
-} 
-
-/*--------------->Elementos dentro del Carrito<------------------------*/
-
-#carrito span > #cart {
-    display: none;
-}
-
-#cart {
-    background-color: #ffffff;
-    max-height: 400px;
-    width: 350px;
-    position: absolute;
-    overflow-x: hidden;
-    border-radius: 10px;
-    top: 55px;
-    right: 40px;
-}
-
-
-.nav-card {
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 0px;
-    border-bottom: solid thin #e1e1e1;
-}
-
-
-.nav-card li {
-    list-style: none;
-    padding: 1rem;
-    font-weight: bold;
-    margin-right: 15px;
-    
-}
-
-#lista_de_productos {
-    width: 370px;
-    margin: auto;
-    margin-top: 0px;
-}
-
-.tarjeta-producto {
-    overflow: auto;
-    display: flex;
-    height: 80%;
-    align-items: center;
-    border-bottom: solid thin gray;
-}
-
-.tarjeta-producto img {
-    width: 80px;
-    margin-left: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.tarjeta-producto h3 {
-    position: absolute;
-    margin-left: 95px;
-    width: 60px;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.tarjeta-producto p {
-    position: absolute;
-    margin-left: 175px;
-    width: 100px;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.tarjeta-producto .cantidad {
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.tarjeta-producto .contador {
-    position: absolute;
-    margin-left: 235px;
-    margin-top: 0px;   
-}
-
-.tarjeta-producto button {
-    font-size: 1.5rem;
-    cursor: pointer;
-    border-radius: 50%;
-    border-width: 1px;
-    border-color: rgb(182, 142, 223);
-    padding: 1px 8px;
-}
-
-.tarjeta-producto button .borrar-producto {
-    color: #333;
-}
-
-.tarjeta-producto .elimina {
-    position: absolute;
-    font-size: 1.8rem;
-    background-color: transparent;
-    border: none;
-    margin-left: 8px;
-    margin-top: -2px;
-} 
-
-#totales button {
-    
-    background-color: rgb(255, 255, 255);
-    display: block;
-    width: 90%;
-    padding: 1rem;
-    margin: 10px auto;
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-transform: uppercase; 
-    cursor: pointer;
-}
-
-#totales #comprar-producto {
-    background-color: rgb(182, 142, 223);
-}
-
-#totales #vaciar {
-    background-color: rgb(170, 165, 165);  
-}
-
-#totales {
-    background-color: #ffffff;
-    height: 20%;
-    margin-top: 20px;   
-}
-
-#totales p {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 25px;
-    margin-top: 5px;
-    font-weight: bold;
-}
-
-/*----------------->FIN HEADER<--------------------*/
-
-/*----------------->SLIDER<------------------------*/
-.swiper-hero {
-    margin-top: 0;
-    width: 100%;
-    max-width: 1600px;
-  }
-
-.swiper-hero img {
-    margin-top: 54px;
-    height: 200px;
-    width: 100%;
-}
-
-
-.swiper-hero .swiper-button-prev,
-.swiper-hero .swiper-button-next {
-    --swiper-navigation-size: 10px;
-    background-color: transparent;
-    color: white;
-    height: 105px;
-    width: 50px;
-    margin-top: -35px;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-.swiper-hero .swiper-button-prev {
-    border-radius: 20px;
-    left: 0;
-}
-
-.swiper-hero .swiper-button-next {
-    border-radius: 20px;
-    right: 0;
-}
-
-.swiper-hero:hover .swiper-button-prev,
-.swiper-hero:hover .swiper-button-next {
-    opacity: 1;
-}
-
-.swiper-hero .swiper-pagination {
-    --swiper-pagination-color: rgb(255, 254, 254);
-    --swiper-pagination-bullet-size: 6px;
-    --swiper-pagination-bullet-inactive-color: #000000;
-    --swiper-pagination-bullet-inactive-opacity: 0.25;
-    --swiper-pagination-bullet-opacity: 1;
-    --swiper-pagination-bullet-horizontal-gap: 8px;
-
-}
-
-.swiper-hero .swiper-pagination-bullet {
-    box-shadow: inset 0 0 0 1px #fff;
-}
-
-.swiper-hero .swiper-pagination-bullet-active {
-    box-shadow: 0 0 0 1px rgb(0, 0, 0, 0.25);
-}
-
-/*-----------------------><------------------------*/
-
-/*------------------->SERVICIOS<-------------------*/
-
-.servicios {
-    width: 100%;
-    margin-top: -23px;
-}
-.servicios h2 {
-    text-align: center;
-    font-size: 15px;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(76, 44, 120);
-}
-
-.columnas_container {
-    margin-top: -30px;
-    margin-bottom: 0px;
-}
-
-.columnas {
-    width: 95%;
-    padding: 10px 30px;
-    margin-left: 10px;
-    margin-bottom: 10px;  
-}
-
-.columnas h3 {
-    font-size: 15px;
-    margin-bottom: 5px;
-    padding-left: 50px;
-}
-
-.columnas p {
-    text-align: left;
-    padding-left: 50px;
-    font-size: 14px;
-}
-
-.iconos img {
-    position: absolute;
-    padding: 5px 0px 0px;
-    height: 60px;
-    margin-left: -15px;
-    margin-bottom: 7px;
-    margin-top: -1px;
-}
-
-/*-----------------------><------------------------*/
-
-/*----------------->DESTACADOS<--------------------*/
-.titulo-destacados h2{
-    text-align: center;
-    font-size: 15px;
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(76, 44, 120);
-    
-}
-
-#lista-productos div {
-    background-color: #fff;
-}
-
-#lista-productos img {
-    height: 168px;
-}
-
-.grid {
-    display: grid;
-    width: 90%;
-    justify-content: center;
-    margin: auto;
-    gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(141px,155px));
-    padding-bottom: 50px;
-    padding-top: 30px;
-    margin-top: 10px;
-}
-
-
-.info {
-    padding: 15px;
-}
-
-.info h3 {
-    font-size: 1.4rem;
-}
-
-.info p {
-    font-size: 1.3rem;
-}
-
-.info h3, .info p {
-    color: #222;
-    margin-bottom: 15px;
-}
-
-.precio p:first-child {
-    /*text-decoration: line-through;*/
-    color: rgb(32, 34, 34);
-}
-
-.info .stock {
-    font-size: 1.2rem;
-    color: #413f3f;
-    
-}
-
-.precio {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bolder;
-}
-
-.precio p {
-    font-size: 1.4rem;
-}
-
-.info button {
-    padding: 1rem;
-    width: 100%;
-    background-color: rgb(76, 44, 120);
-    border: none;
-    outline: none;
-    color: #ffff;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 5px;
-}
-
-.info .agregar-carrito:hover {
-    background-color:rgb(133, 58, 207);
-    transition: all .3s;
-}
-
-.info .comprar:hover {
-    background-color:rgb(174, 123, 224);
-    transition: all .3s;
-}
-
-/*-----------------------><------------------------*/
-
-/*---------------->REDES SOCIALES<-----------------*/
-
-.redes {
-    background-color: rgb(76, 44, 120);
-    margin-top: 20px;
-}
-.info_ico {
-    text-align: center;
-    padding: 20px;
-    font-size: 24px;
-}
-.info_ico a {
-    margin-top: 20px;
-    margin: 10px;
-}
-
-.info_txt {
-    text-align: center;
-    padding: 20px;
-    color: rgb(255, 255, 255);
-    margin-top: -10px;
-}
-.info_txt h2 {
-    font-size: 15px;
-}
-
-.icotiktok {
-    color: black;
-}
-
-/*-----------------------><------------------------*/
-
-/*------------>Boton Flotante Whats app<-----------*/
-
-
-.btn-float-wp{
-    position:fixed;
-    width:42px;
-    height:39px;
-    line-height: 41px;
-    bottom:10px;
-    right:5px;
-    background:#0df053;
-    color: #fff;
-    border-radius:50px;
-    text-align:center;
-    font-size:30px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-    z-index:100;
-    transition: all 300ms ease;
-}
-
-
-.btn-float-wp:hover {
-    text-decoration: none;
-    background: #0df053;
-    color: #fff;
-}
-
-/*-----------------------><------------------------*/
-
-/*--------------------->FOOTER<--------------------*/
-footer {
-    width: 100%;
-    padding: 10px;
-    background-color: rgb(38, 39, 39);   
-}
-
-.container_footer {   
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 1200px;
-    margin-top: 50px;
-}
-
-.box_footer {
-    padding: 24px;
-    margin-top: -30px;
-    margin-bottom: 50px;
-}
-
-.box_footer .metodos-pagos {
-    width: 100%;
-    margin-top: -20px;
-    margin-left: 10px;
-    font-size: 14px;
-    color: white;
-}
-
-.box_footer .metodos-pagos h4 {
-    font-size: 15px;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    margin-left: 0px;
-    border-bottom: solid  1px white;
-    color: rgb(150, 83, 177);
+/* ------------------------- */
+/* Mediaqueies */
+/* ------------------------- */
+@media screen and (max-width: 1000px) {
+	.menu .contenedor-enlaces-nav {
+		padding: 0 10px;
+	}
+
+	.menu .contenedor {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.menu .contenedor {
+		width: 90%;
+	}
+
+	.menu .contenedor-botones-menu {
+		display: flex;
+	}
+
+	.menu .contenedor-enlaces-nav {
+		padding: 20px;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		position: fixed;
+		left: 0;
+		background: #232F3F;
+		height: 100vh;
+		width: 80%;
+		z-index: 2000;
+		transition: .3s ease all;
+		transform: translate(-100%);
+	}
+
+	.menu .contenedor-enlaces-nav.activo {
+		transform: translate(0%);
+	}
+
+	.menu .btn-departamentos {
+		width: 100%;
+		align-items: center;
+		justify-content: space-between;
+		cursor: pointer;
+	}
+
+	.menu .btn-departamentos i {
+		position: static;
+		margin-left: 20px;
+		transform: rotate(-90deg);
+	}
+
+	.menu .enlaces {
+		width: 100%;
+	}
+
+	.menu .enlaces a {
+		display: block;
+		margin: 10px 0;
+		padding: 10px;
+	}
+
+	.grid {
+		display: grid;
+		transition: .3s ease all;
+		transform: translateX(-100%);
+		z-index: 3000;
+		width: 80%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		grid-template-areas: "categorias categorias categorias categorias";
+	}
+
+	.grid.activo {
+		transform: translateX(0%);
+	}
+
+	.grid::before {
+		display: none;
+	}
+
+	.grid .btn-regresar {
+		display: inline-block;
+	}
+
+	.grid .categorias .subtitulo {
+		display: block;
+	}
+
+	.grid .contenedor-subcategorias {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		transition: .3s ease all;
+		transform: translateX(-100%);
+		overflow: auto;
+	}
+
+	.grid .contenedor-subcategorias.activo {
+		transform: translateX(0%);
+	}
+
+	.grid .contenedor-subcategorias .subcategoria {
+		grid-template-columns: 1fr;
+	}
+
+	.grid .contenedor-subcategorias .banner-subcategoria {
+		width: 100%;
+		min-height: 250px;
+		max-height: 350px;
+	}
+
+	.grid .enlaces-subcategoria {
+		min-height: 50vh;
+		overflow: auto;
+	}
+
+	.grid .contenedor-subcategorias .galeria-subcategoria a {
+		width: 25%;
+		height: 100%;
+	}
 }
-
-
-.box_footer img {
-    width: 47px;
-    height: 30px;
-    margin: 5px;
-}
-
-
-
-.box_footer h2 {
-    margin-bottom: 10px;
-    margin-top: 0px;
-    margin-left: 10px;
-    color: rgb(150, 83, 177);
-    font-size: 15px;
-}
-
-.box_footer a {
-    margin-top: 16px;
-    margin-left: 10px;
-    color: white;
-    font-size: 14px;
-}
-
-
-.box_footer span {
-    margin-top: 16px;
-    
-}
-
-.box_footer .ico {
-    font-size: 14px;
-    margin-left: 10px;
-    margin-right: 0;
-}
-
-.box_footer .icoclipboard-text1 {
-    color: white;
-}
-.box_footer .icoblocked {
-    color: rgb(158, 37, 37);
-}
-
-.box_footer a:hover {
-    color: rgb(182, 142, 223);
-}
-
-
-.box_copyright {
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 0px 40px;
-}
-
-.box_copyright p {
-    margin-top: 5px;
-    color: white;
-    font-size: 8px;
-}
-
-.box_copyright hr {
-    border: none;
-    height: 1px;
-    background-color: white;
-}
-}
-
-/*-----------------------><-------------------------------------*/
-/*                 Responsive Celulares 414                     */
-/*-----------------------><-------------------------------------*/
-
-@media (max-width: 414px) {
-   
-    * {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
-    
-    /*-------------Menu Hamburguesa-------------------*/
-    
-    #menu {
-        display: block;
-        margin-left: 375px;
-    }
-
-    #img-carrito {
-        position: absolute;
-        height: 20px;
-        margin-top: -13px;
-        margin-left: 115px;
-        cursor: pointer;
-    }
-    /*-----------------*/
-    span .cuenta {
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        background-color: rgb(76, 44, 120);
-        font-size: 13px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border: 1px solid #fff;
-        right: 56px;
-        bottom: 36px;
-    } 
-
-    #cart {
-        background-color: #ffffff;
-        max-height: 400px;
-        width: 350px;
-        position: absolute;
-        overflow-x: hidden;
-        border-radius: 10px;
-        top: 55px;
-        right: 32px;
-    }
-    
-    nav ul li ul li a{
-        width: 100%;
-        background-color: rgb(11, 104, 34);
-        color: rgb(255, 255, 255);
-    }
-}  
-
-
-/*-----------------------><-------------------------------------*/
-/*                 Responsive Celulares 412                     */
-/*-----------------------><-------------------------------------*/
-
-@media (max-width: 412px) {
-   
-    * {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
-    
-    /*-------------Menu Hamburguesa-------------------*/
-    
-    #menu {
-        display: block;
-        margin-left: 375px;
-    }
-
-    #img-carrito {
-        position: absolute;
-        height: 20px;
-        margin-top: -13px;
-        margin-left: 115px;
-        cursor: pointer;
-    }
-    /*-----------------*/
-    span .cuenta {
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        background-color: rgb(76, 44, 120);
-        font-size: 13px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border: 1px solid #fff;
-        right: 54px;
-        bottom: 36px;
-    } 
-
-    nav ul li ul li a{
-        width: 100%;
-        background-color: rgb(169, 197, 146);
-        color: rgb(255, 255, 255);
-    }
-
-}  
-
-
-/*-----------------------><-------------------------------------*/
-/*                 Responsive Celulares 390                     */
-/*-----------------------><-------------------------------------*/
-
-@media (max-width: 390px) {
-   
-    * {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
-    /*-------------Menu Hamburguesa-------------------*/
-    
-    #menu {
-        display: block;
-        margin-left: 355px;
-    }
-    
-    /*--------------Idioma-----------------*/
-    .language-acceder {
-        display: flex;
-        padding: 23px;
-        margin-left: -90px;
-    }
-    /*-----------------*/
-    #img-carrito {
-        position: absolute;
-        height: 20px;
-        margin-top: -13px;
-        margin-left: 105px;
-        cursor: pointer;
-    }
-
-    span .cuenta {
-        position: absolute;
-        width: 14px;
-        height: 14px;
-        background-color: rgb(76, 44, 120);
-        font-size: 13px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border: 1px solid #fff;
-        right: 45px;
-        bottom: 36px;
-    } 
-
-    #cart {
-        background-color: #ffffff;
-        max-height: 400px;
-        width: 350px;
-        position: absolute;
-        overflow-x: hidden;
-        border-radius: 10px;
-        top: 55px;
-        right: 20px;
-    }
-
-    nav ul li ul li a{
-        width: 100%;
-        background-color: rgb(180, 170, 28);
-        color: rgb(255, 255, 255);
-    }
-
-}
-
-/*-----------------------><-------------------------------------*/
-/*                 Responsive Celulares 375                     */
-/*-----------------------><-------------------------------------*/
-
-@media (max-width: 375px) {
-    * {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
-
-      h1 {
-        position: absolute;
-        font-size: 18px;
-        margin-left: 60px;
-        margin-top: -15px;
-    }
-    .subtitulo {
-        position: absolute;
-        font-size: 9px;
-        margin-left: 55px;
-        margin-top: 15px;
-    }
-    
-     /*-------------Menu Hamburguesa-------------------*/
-    
-     #menu {
-        display: block;
-        margin-left: 335px;
-    }
-    
-    /*-----------------*/
-    #img-carrito {
-        position: absolute;
-        height: 20px;
-        margin-top: -13px;
-        margin-left: 80px;
-        cursor: pointer;
-    }
-
-    span .cuenta {
-        position: absolute;
-        width: 14px;
-        height: 14px;
-        background-color: rgb(76, 44, 120);
-        font-size: 13px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border: 1px solid #fff;
-        right: 54px;
-        bottom: 36px;
-    } 
-
-    #cart {
-        background-color: #ffffff;
-        max-height: 400px;
-        width: 350px;
-        position: absolute;
-        overflow-x: hidden;
-        border-radius: 10px;
-        top: 55px;
-        right: 13px;
-    }
-
-    /*--------------Idioma-----------------*/
-        .language-acceder {
-            display: flex;
-            padding: 23px;
-            margin-left: -380px;
-        }
-    
-        .language-acceder {
-            position: absolute;
-            display: flex;
-            margin-left: -100px;
-            margin-top: -32px;
-        }
-    
-        .sesion span{
-            font-size: 12px;
-            color: white;
-            margin-right: 5px;
-         }
-         
-         .idioma span {
-             font-size: 11px;
-             color: white;
-             margin-right: 5px;
-         }
-         
-         .idioma a, .sesion a {
-             color: white;
-             font-size: 13px;
-         }
-         
-         .idioma a:hover, .sesion a:hover {
-             color: rgb(182, 142, 223);
-         }
-         
-         .idioma {
-             margin-right: 15px;
-         }
-
-         nav ul li ul li a{
-            width: 100%;
-            background-color: rgb(10, 132, 148);
-            color: rgb(255, 255, 255);
-        }
-}
-
-
-/*-----------------------><-------------------------------------*/
-/*                 Responsive Celulares 360                     */
-/*-----------------------><-------------------------------------*/
-
-@media (max-width: 360px) {
-   
-    * {
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
-
-    h1 {
-        position: absolute;
-        font-size: 18px;
-        margin-left: 60px;
-        margin-top: -15px;
-    }
-    .subtitulo {
-        position: absolute;
-        font-size: 9px;
-        margin-left: 55px;
-        margin-top: 15px;
-    }
-    /*-------------Menu Hamburguesa-------------------*/
-    
-    #menu {
-        display: block;
-        margin-left: 325px;
-    }
-    
-    /*-----------------*/
-    #img-carrito {
-        position: absolute;
-        height: 20px;
-        margin-top: -13px;
-        margin-left: 75px;
-        cursor: pointer;
-    }
-
-    span .cuenta {
-        position: absolute;
-        width: 14px;
-        height: 14px;
-        background-color: rgb(76, 44, 120);
-        font-size: 13px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        border: 1px solid #fff;
-        right: 45px;
-        bottom: 36px;
-    } 
-
-    #cart {
-        background-color: #ffffff;
-        max-height: 400px;
-        width: 350px;
-        position: absolute;
-        overflow-x: hidden;
-        border-radius: 10px;
-        top: 55px;
-        right: 5px;
-    }
-    /*--------------Idioma-----------------*/
-    .language-acceder {
-        display: flex;
-        padding: 23px;
-        margin-left: -380px;
-    }
-
-    .language-acceder {
-        position: absolute;
-        display: flex;
-        margin-left: -100px;
-        margin-top: -32px;
-    }
-
-    .sesion span{
-        font-size: 11px;
-        color: white;
-        margin-right: 5px;
-     }
-     
-     .idioma span {
-         font-size: 10px;
-         color: white;
-         margin-right: 5px;
-     }
-     
-     .idioma a, .sesion a {
-         color: white;
-         font-size: 12px;
-     }
-     
-     .idioma a:hover, .sesion a:hover {
-         color: rgb(182, 142, 223);
-     }
-     
-     .idioma {
-         margin-right: 15px;
-     }
-
-     nav ul li ul li a{
-        width: 100%;
-        background-color: rgb(110, 19, 72);
-        color: rgb(255, 255, 255);
-    }
-
-}
-

@@ -1,34 +1,3 @@
-//Menu-hamburguer
-
-document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.getElementById('menu');
-    const navUl = document.getElementById('nav-ul');
-
-    menuToggle.addEventListener('click', function (event) {
-        event.stopPropagation();
-        navUl.classList.toggle('show');
-    });
-
-    document.addEventListener('click', function (event) {
-        if (navUl.classList.contains('show') && 
-            !navUl.contains(event.target) && event.target !== menuToggle) {
-            navUl.classList.remove('show');
-        }
-    });
-
-    $(".submenu").click(function(event){
-        event.stopPropagation();
-        // Cerrar otros submenus
-        $(this).siblings('.submenu').children('ul').slideUp();
-        $(this).children("ul").slideToggle();
-    });
-
-    $("ul").click(function(event){
-        event.stopPropagation();
-    });
-});
-
-
 
 //Cart-mobile
 

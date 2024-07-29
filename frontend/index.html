@@ -1,177 +1,311 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Itadan Impresiones 3D</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
-        <link rel="icon" href="images/favicons/favicon2.png">
-        <link rel="stylesheet" href="libs/iconosItadan-v1.0/style.css">
-        <link rel="stylesheet" href="libs/btn-float-whatsapp/css/fontello.css">
-	    <script src="javascript/index.js" defer></script>
-	    <script src="javascript/cartService.js" defer></script>
-    </head>
-    <body>
-        <header>
-               <h1>Itadan</h1>
-                <P class="subtitulo">Impresiones 3D</P>
-                <a href="index.html" class="logo"><img src="images/logo/Logo_prueba6.png" alt="Logo"></a>
-                <span id="menu"><span class="ico icomenu"></span></span>
-                
-                <nav id="carrito">
-                    <ul id="nav-ul">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li class="submenu"><a href="#">Acerca de <span class="ico icocircle-down"></span></a>
-                            <ul>
-                                <li><a href="html/about.html">¿Quienes somos?</a></li>
-                                <li><a href="html/por-que-elegirnos.html">¿Por qué elegirnos?</a></li>
-                                <li><a href="html/que-materiales-usamos.html">¿Que materiales usamos?</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu"><a href="#">Productos <span class="ico icocircle-down"></span></a>
-                            <ul>
-                                <li><a href="html/productos.html">Todos los Productos</a></li>
-                                <li class="submenu"><a href="#">Artículos <span class="ico icocircle-down"></span></a>
-                                    <ul>
-                                        <li><a href="html/all_products/hogar.html">Hogar</a></li>
-                                        <li><a href="html/all_products/exteriores-jardineria.html">Exteriores/Jardineria</a></li>
-                                        <li class="submenu"><a href="#">Soportes <span class="ico icocircle-down"></span></a>
-                                            <ul>
-                                                <li><a href="html/all_products/soportes.html">Todos los soportes</a></li>
-                                                <li><a href="html/all_products/celulares-tablets.html">Celulares/Tablets</a></li>
-                                                <li><a href="html/all_products/auriculares.html">Auriculares</a></li>
-                                                <li><a href="html/all_products/joysticks.html">Joysticks</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="html/all_products/bijouterie.html">Bijouterie</a></li>
-                                        <li><a href="html/all_products/cosplay-accesorios.html">Cosplay/Accesorios</a></li>
-                                        <li><a href="html/all_products/juegos-juegos-de-mesa.html">Juegos/Juegos de Mesa</a></li>
-                                    </ul>
-                                </li>
-                                <li class="submenu"><a href="#">Figuras <span class="ico icocircle-down"></span></a>
-                                    <ul>
-                                        <li class="submenu"><a href="#">Anime <span class="ico icocircle-down"></span></a>
-                                            <ul>
-                                                <li><a href="html/all_products/anime.html">Todos los animes</a></li>
-                                                <li><a href="html/all_products/dragon-ball.html">Dragon Ball</a></li>
-                                                <li><a href="html/all_products/pokemon.html">Pokemon</a></li>
-                                                <li><a href="html/all_products/one-piece.html">One Piece</a></li>
-                                                <li><a href="html/all_products/naruto.html">Naruto</a></li>
-                                                <li><a href="html/all_products/demon-slayer.html">Demon Slayer</a></li>
-                                                <li><a href="html/all_products/sailor-moon.html">Sailor Moon</a></li>
-                                                <li><a href="html/all_products/chainsaw-man.html">Chainsaw Man</a></li>
-                                                <li><a href="html/all_products/jujutsu-kaisen.html">Jujutsu Kaisen</a></li>
-                                                <li><a href="html/all_products/boku-no-hero.html">Boku No Hero</a></li>
-                                                <li><a href="html/all_products/shingeki.html">Shingeki No Kiojin</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu"><a href="#">Comics <span class="ico icocircle-down"></span></a>
-                                            <ul>
-                                                <li><a href="html/all_products/comics.html">Todos los cómics</a></li>
-                                                <li><a href="html/all_products/dc-comic.html">DC Comics</a></li>
-                                                <li><a href="html/all_products/marvel.html">Marvel</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu"><a href="#">Peliculas <span class="ico icocircle-down"></span></a>
-                                            <ul><li><a href="html/all_products/peliculas.html">Todas las películas</a></li>
-                                                <li><a href="html/all_products/el-señor-de-los-anillos.html">El Señor de los Anillos</a></li>
-                                                <li><a href="html/all_products/harry-potter.html">Harry Potter</a></li>
-                                                <li><a href="html/all_products/los-juegos-del-hambre.html">Los Juegos del Hambre</a></li>
-                                                <li><a href="html/all_products/intensamente.html">Intensamente</a></li>
-                                                <li><a href="html/all_products/frozen.html">Frozen</a></li>
-                                                <li><a href="html/all_products/lilo&stich.html">Lilo & Stich</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="submenu"><a href="#">Videojuegos <span class="ico icocircle-down"></span></a>
-                                            <ul>
-                                                <li><a href="html/all_products/videojuegos.html">Todos los videojuegos</a></li>
-                                                <li><a href="html/all_products/league-of-legends.html">League of Legends</a></li>
-                                                <li><a href="html/all_products/valorant.html">Valorant</a></li>
-                                                <li><a href="html/all_products/warcraft.html">World of Warcraft</a></li>
-                                                <li><a href="html/all_products/dark-soul.html">Dark Soul</a></li>
-                                                <li><a href="html/all_products/resident-evil.html">Resident Evil</a></li>
-                                                <li><a href="html/all_products/silent-hill.html">Silent Hill</a></li>
-                                                <li><a href="html/all_products/super-mario.html">Super Mario</a></li>
-                                                <li><a href="html/all_products/sonic.html">Sonic</a></li>
-                                                <li><a href="html/all_products/arcade.html">Arcade</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="html/all_products/musica.html">Música</a></li>
-                                        <li><a href="html/all_products/infantil.html">Infantil</a></li>
-                                    </ul>
-                                </li>
-                                <li class="submenu"><a href="#">Colecciones Especiales <span class="ico icocircle-down"></span></a>
-                                    <ul>
-                                        <li><a href="#">Especial Silver</a></li>
-                                        <li><a href="#">Especial Gold</a></li>
-                                        <li><a href="#">Especial Platinum</a></li>
-                                        <li><a href="#">Especial Diamond</a></li>
-                                    </ul>
-                                </li>
-                                <li class="submenu"><a href="#">Materiales <span class="ico icocircle-down"></span></a>
-                                    <ul>
-                                        <li><a href="html/all_products/filamento.html">Todos los materiales</a></li>
-                                        <li class="submenu"><a href="#">Filamento <span class="ico icocircle-down"></span></a>
-                                            <ul>
-                                                <li><a href="html/all_products/pla.html">PLA</a></li>
-                                                <li><a href="html/all_products/pla-mas.html">PLA +</a></li>
-                                                <li><a href="html/all_products/pla-plus.html">PLA Plus</a></li>
-                                                <li><a href="html/all_products/abs.html">ABS</a></li>
-                                                <li><a href="html/all_products/pet-g.html">PET-G</a></li>
-                                                <li><a href="html/all_products/flex-tpu.html">FLEX TPU</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="html/all_products/resina.html">Resina</a>
-                                            <ul>
-                                                <li><a href="html/all_products/estandar.html">Estandar</a></li>
-                                                <li><a href="html/all_products/dental.html">Dental</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>    
-                            </ul>
-                        </li>    
-                        <li><a href="html/services.html">Servicios</a></li>  
-                        <li><a href="html/contact.html">Contacto</a></li>  
-                    </ul>
-                    
-                    <div class="search">
-                        <input type="text" placeholder="Buscar...">
-                        <button><span class="ico icosearch"></span></button>
-                    </div>
-                    <div class="language-acceder">
-                        <div class="idioma">
-                            <span class="ico icoearth"></span><a href="#">Español</a>
-                        </div>
-                        <div class="sesion">
-                            <span class="ico icouser"></span><a href="html/log-in.html">Acceder</a>
-                        </div>
-                    </div>
-                    <span>
-                        <img src="libs/iconosItadan-v1.0/fonts/car.svg" onclick="toggleCart()" id="img-carrito" alt="Carrito de compra">
-                        <span class="cuenta" id="cuenta-carrito">0</span>
-                        <div id="cart">
-                            <ul class="nav-card">
-                                <li>Imagen</li>
-                                <li>Nombre</li>
-                                <li>Precio</li>
-                                <li>Cantidad</li>
-                                <li></li>
-                            </ul>
-                            <div id="lista_de_productos"></div>
-                                <div id="totales">
-                                    <p>Total unidades: <span id="unidades">0</span></p>
-                                    <p>Total precio: <span id="precio">0</span></p>
-                                    <button id="comprar-producto">Iniciar Compra</button>
-                                    <button id="vaciar">Vaciar carrito</button>
-                                </div>
-                        </div>
-                    </span>
-                </nav>
-        </header>
-        
-        <div class="swiper swiper-hero">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Itadan Impresiones 3D</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="icon" href="images/favicons/favicon2.png">
+	<link rel="stylesheet" href="libs/iconosItadan-v1.0/style.css">
+	<link rel="stylesheet" href="libs/btn-float-whatsapp/css/fontello.css">
+	<script src="javascript/index.js" defer></script>
+	<script src="javascript/cartService.js" defer></script>
+</head>
+<body>
+	<div class="contenedor-logo">
+		<h1>Itadan</h1>
+            <P class="subtitulo-logo">Impresiones 3D</P>
+            <a href="/frontend/index.html" class="logo"><img src="/frontend/images/logo/Logo_prueba6.png" alt="Logo"></a>
+	</div>
+	<nav class="menu" id="menu">
+		<div class="contenedor contenedor-botones-menu">
+			<button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
+			<button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
+		</div>
+
+		<div class="contenedor contenedor-enlaces-nav">
+			<div class="btn-departamentos" id="btn-departamentos">
+				<p>Todas las <span>Categorías</span></p>
+				<i class="fas fa-caret-down"></i>
+			</div>
+
+			<div class="enlaces">
+				<a href="#">Acerca de</a>
+				<a href="#">Contacto</a>
+				<a href="#">Servicios</a>
+				<span class="ico icoearth"></span><a href="#">Español</a>
+				<span class="ico icouser"></span><a href="#">Acceder</a>
+				<span>
+					<img src="/frontend/libs/iconosItadan-v1.0/fonts/car.svg" id="img-carrito" alt="Carrito de compra">
+					<span class="cuenta" id="cuenta-carrito">0</span>
+					<div id="cart">
+						<ul class="nav-card">
+							<li>Imagen</li>
+							<li>Nombre</li>
+							<li>Precio</li>
+							<li>Cantidad</li>
+							<li></li>
+						</ul>
+						<div id="lista_de_productos"></div>
+							<div id="totales">
+								<p>Total unidades: <span id="unidades">0</span></p>
+								<p>Total precio: <span id="precio">0</span></p>
+								<button id="comprar-producto">Iniciar Compra</button>
+								<button id="vaciar">Vaciar carrito</button>
+							</div>
+					</div>
+				</span>
+			</div>
+		</div>
+
+		<div class="contenedor contenedor-grid">
+			<div class="grid" id="grid">
+				<div class="categorias">
+					<button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
+					<h3 class="subtitulo">Categorias</h3>
+
+					<a href="#" data-categoria="tecnologia-y-computadoras">Todos los productos <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="libros">Artículos <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="ropa-y-accesorios">Figuras <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="hogar-y-cocina">Colecciones Especiales <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="juegos-y-juguetes">Materiales <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="salud-y-belleza">Lorem <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="alimentos-y-bebidas">Lorem <i class="fas fa-angle-right"></i></a>
+				</div>
+
+				<div class="contenedor-subcategorias">
+					<div class="subcategoria " data-categoria="tecnologia-y-computadoras">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Nuestros Productos</h3>
+							<a href="#">Lorem</a>
+							<a href="#">Lorem</a>
+							<a href="#">Lorem</a>
+							<a href="#">Lorem</a>
+							<a href="#">Lorem</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./images/tecnologia-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./images/tecnologia-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/tecnologia-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/tecnologia-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/tecnologia-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="libros">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Todo Tipo de Artículos</h3>
+							<a href="#">Hogar</a>
+							<a href="#">Exteriores/Jardinería</a>
+							<a href="#">Soportes</a>
+							<a href="#">Bijouterie</a>
+							<a href="#">Cosplay/Accesorios</a>
+							<a href="#">Juegos/Juegos de mesa</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./images/libros-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./images/libros-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/libros-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/libros-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/libros-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="ropa-y-accesorios">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Nuestras Figuras</h3>
+							<a href="#">Anime</a>
+							<a href="#">Cómics</a>
+							<a href="#">Películas</a>
+							<a href="#">Videojuegos</a>
+							<a href="#">Música</a>
+							<a href="#">Infantil</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./images/ropa-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./images/ropa-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/ropa-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/ropa-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/ropa-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="hogar-y-cocina">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Colecciones Únicas</h3>
+							<a href="#">Edición Silver</a>
+							<a href="#">Edición Gold</a>
+							<a href="#">Edición Platinum</a>
+							<a href="#">Edición Diamond</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./images/hogar-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./images/hogar-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/hogar-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/hogar-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/hogar-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="juegos-y-juguetes">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Nuestra Materia Prima</h3>
+							<a href="#">Filamento</a>
+							<a href="#">Resina</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./images/juegos-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./images/juegos-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/juegos-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/juegos-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/juegos-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="salud-y-belleza">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Lorem</h3>
+							<a href="#">Lorem</a>
+							<a href="#">Lorem</a>
+							<a href="#">Lorem</a>
+							<a href="#">Lorem</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./images/belleza-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./images/belleza-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/belleza-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/belleza-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/belleza-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="alimentos-y-bebidas">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Lorem</h3>
+							<a href="#">Lorem</a>
+							<a href="#">Lorem</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./images/comida-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./images/comida-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/comida-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/comida-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./images/comida-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+		<div class="swiper swiper-hero">
             
             <div class="swiper-wrapper">
                 
@@ -280,7 +414,7 @@
             <h2>Productos Destacados</h2>
         </div>
         
-        <div class="grid" id="lista-productos">
+        <div class="grid-destacados" id="lista-productos">
             
         </div> 
         
@@ -382,10 +516,12 @@
         </footer>
         
     </body>
-    <script src="javascript/jquery-1.11.3.min.js"></script>
+    
     <script src="javascript/swiper-bundle.min.js"></script>   
     <script src="javascript/articulos-destacados.js"></script>
     <script src="javascript/slider.js"></script> 
     <script src="/frontend/javascript/menu.js"></script>  
-
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>  
+	<script src="javascript/main.js"></script>
+</body>
 </html>
