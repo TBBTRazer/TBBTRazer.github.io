@@ -353,8 +353,8 @@ span .cuenta {
 	display: none;
 }
 
-.grid .btn-regresar i {
-	margin-right: 10px;
+.grid .btn-regresar .icocircle-right {
+	margin-left: 10px;
 }
 
 .grid .categorias {
@@ -3673,7 +3673,7 @@ footer {
 
    .grid .enlaces-subcategoria {
 	   min-height: 50vh;
-	   overflow: auto;
+	   overflow-y: auto;
    }
 
    .grid .contenedor-subcategorias .galeria-subcategoria a {
