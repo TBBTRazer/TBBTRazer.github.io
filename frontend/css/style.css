@@ -3667,8 +3667,8 @@ footer {
 
    .grid .contenedor-subcategorias .banner-subcategoria {
 	   width: 100%;
-	   min-height: 250px;
-	   max-height: 350px;
+	   min-height: 200px;
+	   max-height: 200px;
    }
 
    .grid .enlaces-subcategoria {
