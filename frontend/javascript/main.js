@@ -3,7 +3,7 @@ const btnDepartamentos = document.getElementById('btn-departamentos'),
 	  grid = document.getElementById('grid'),
 	  contenedorEnlacesNav = document.querySelector('#menu .contenedor-enlaces-nav'),
 	  contenedorSubCategorias = document.querySelector('#grid .contenedor-subcategorias'),
-	  esDispositivoMovil = () => window.innerWidth <= 800;
+	  esDispositivoMovil = () => window.innerWidth <= 930;
 
 btnDepartamentos.addEventListener('mouseover', () => {
 	if(!esDispositivoMovil()){
