@@ -1,5 +1,4 @@
 const btnDepartamentos = document.getElementById('btn-departamentos'),
-	  btnCerrarMenu = document.getElementById('btn-menu-cerrar'),
 	  grid = document.getElementById('grid'),
 	  contenedorEnlacesNav = document.querySelector('#menu .contenedor-enlaces-nav'),
 	  contenedorSubCategorias = document.querySelector('#grid .contenedor-subcategorias'),
@@ -46,14 +45,12 @@ document.querySelector('#btn-menu-barras').addEventListener('click', (e) => {
 btnDepartamentos.addEventListener('click', (e) => {
 	e.preventDefault();
 	grid.classList.add('activo');
-	btnCerrarMenu.classList.add('activo');
 });
 
 // Boton de regresar en el menu de categorias
 document.querySelector('#grid .categorias .btn-regresar').addEventListener('click', (e) => {
 	e.preventDefault();
 	grid.classList.remove('activo');
-	btnCerrarMenu.classList.remove('activo');
 });
 
 document.querySelectorAll('#menu .categorias a').forEach((elemento) => {
@@ -78,10 +75,3 @@ document.querySelectorAll('#grid .contenedor-subcategorias .btn-regresar').forEa
 	});
 });
 
-btnCerrarMenu.addEventListener('click', (e)=> {
-	e.preventDefault();
-	document.querySelectorAll('#menu .activo').forEach((elemento) => {
-		elemento.classList.remove('activo');
-	});
-	document.querySelector('body').style.overflow = 'visible';
-});

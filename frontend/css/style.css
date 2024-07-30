@@ -817,7 +817,7 @@ footer {
 }
 
 .box_copyright p {
-    margin-top: 20px;
+    margin-top: 10px;
     color: white;
     font-size: 10px;
 }
@@ -844,6 +844,12 @@ footer {
 		top: 60px;
 		right: 0;
 		z-index: 1001;
+	}
+
+	.box_copyright p {
+		margin-top: 10px;
+		color: white;
+		font-size: 10px;
 	}
 }
 
@@ -1503,7 +1509,7 @@ footer {
 	}
 
 	.box_copyright p {
-		margin-top: 20px;
+		margin-top: 10px;
 		color: white;
 		font-size: 10px;
 	}
@@ -1528,6 +1534,11 @@ footer {
 		top: 60px;
 		right: 0;
 		z-index: 1001;
+	}
+	.box_copyright p {
+		margin-top: 10px;
+		color: white;
+		font-size: 10px;
 	}
 }
 
@@ -2169,7 +2180,7 @@ footer {
 	}
 
 	.box_copyright p {
-		margin-top: 20px;
+		margin-top: 10px;
 		color: white;
 		font-size: 10px;
 	}
@@ -2194,6 +2205,11 @@ footer {
 		top: 60px;
 		right: 0;
 		z-index: 1001;
+	}
+	.box_copyright p {
+		margin-top: 10px;
+		color: white;
+		font-size: 10px;
 	}
 }
 
@@ -2306,6 +2322,11 @@ footer {
 		transition: all .3s;
 	}
 
+	.box_copyright p {
+		margin-top: 10px;
+		color: white;
+		font-size: 10px;
+	}
 
 }
 
@@ -2812,6 +2833,12 @@ footer {
 	.icotiktok {
 		color: black;
 	}
+
+	.box_copyright p {
+		margin-top: 10px;
+		color: white;
+		font-size: 10px;
+	}
 }
 
 @media screen and (max-width: 430px) {
@@ -3236,7 +3263,7 @@ footer {
 	}
 	
 	.info h3 {
-		font-size: 0.9rem;
+		font-size: 0.82rem;
 	}
 	
 	.info p {
@@ -3316,6 +3343,12 @@ footer {
 
 	.icotiktok {
 		color: black;
+	}
+
+	.box_copyright p {
+		margin-top: 10px;
+		color: white;
+		font-size: 10px;
 	}
 }
 
@@ -3741,7 +3774,7 @@ footer {
 	}
 	
 	.info h3 {
-		font-size: 0.9rem;
+		font-size: 0.82rem;
 	}
 	
 	.info p {
@@ -3821,6 +3854,12 @@ footer {
 
 	.icotiktok {
 		color: black;
+	}
+
+	.box_copyright p {
+		margin-top: 10px;
+		color: white;
+		font-size: 9px;
 	}
 }
 
@@ -3961,6 +4000,12 @@ footer {
 		margin-right: 25px;
 		margin-top: 5px;
 		font-weight: bold;
+	}
+
+	.box_copyright p {
+		margin-top: 10px;
+		color: white;
+		font-size: 9px;
 	}
 
 }
@@ -4104,6 +4149,12 @@ footer {
 		font-weight: bold;
 	}
 
+	.box_copyright p {
+		margin-top: 10px;
+		color: white;
+		font-size: 9px;
+	}
+
 }
 
 @media screen and (max-width:375px) {
@@ -4244,6 +4295,12 @@ footer {
 		margin-top: 5px;
 		font-weight: bold;
 	}
+
+	.box_copyright p {
+		margin-top: 10px;
+		color: white;
+		font-size: 8px;
+	}
 }
 
 @media screen and (max-width:360px) {
@@ -4383,5 +4440,11 @@ footer {
 		margin-right: 25px;
 		margin-top: 5px;
 		font-weight: bold;
+	}
+
+	.box_copyright p {
+		margin-top: 10px;
+		color: white;
+		font-size: 8px;
 	}
 }
