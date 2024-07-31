@@ -3668,12 +3668,12 @@ footer {
 
    .grid .contenedor-subcategorias .banner-subcategoria {
 	   width: 100%;
-	   min-height: 200px;
-	   max-height: 200px;
+	   min-height: 250px;
+	   max-height: 350px;
    }
 
    .grid .enlaces-subcategoria {
-	   min-height: 30vh;
+	   min-height: 50vh;
 	   overflow: auto;
    }
 
