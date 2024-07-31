@@ -3564,6 +3564,7 @@ footer {
 	   top: 45px;
    }
 
+   
    .menu .contenedor-enlaces-nav {
 	   padding: 20px;
 	   flex-direction: column;
@@ -3571,7 +3572,7 @@ footer {
 	   justify-content: flex-start;
 	   position: fixed;
 	   left: 0;
-	   background: #fff;
+	   background: #ceadad;
 	   height: 100vh;
 	   width: 100%;
 	   z-index: 2000;
@@ -3668,12 +3669,12 @@ footer {
    .grid .contenedor-subcategorias .banner-subcategoria {
 	   width: 100%;
 	   min-height: 200px;
-	   max-height: 200px;
+	   max-height: 250px;
    }
 
    .grid .enlaces-subcategoria {
-	   min-height: 50vh;
-	   overflow-y: auto;
+	   min-height: 30vh;
+	   overflow-y: scroll;
    }
 
    .grid .contenedor-subcategorias .galeria-subcategoria a {
