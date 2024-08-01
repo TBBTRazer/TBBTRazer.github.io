@@ -2163,6 +2163,23 @@ footer {
 
 }
 
+@media screen and (max-width: 460px) {
+
+	.container-login {
+		position: relative;
+		width: 350px;
+		margin-top: 120px;
+		margin-bottom: 60px;
+		border: 2px solid rgba(7, 7, 7, 0.6);
+		border-radius: 20px;
+		background-color: rgb(76, 44, 120);
+		height: 400px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 @media screen and (max-width: 430px) {
 
 	*{	
