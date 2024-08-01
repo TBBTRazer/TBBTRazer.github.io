@@ -465,14 +465,14 @@ span .cuenta {
     padding-top: 110px;
     padding-bottom: 100px;
     background-color: #fff;
-    margin-left: 180px;
-    margin-right: 180px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .cookies p { 
     font-size: 16px;
-    padding-left: 90px;
-    width: 900px;
+    width: 90%;
     padding-top: 20px;
+	margin-left: 55px;
 
 }
 
@@ -482,7 +482,7 @@ span .cuenta {
     width: 100%;
     margin-left: 0px;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 h2 {
@@ -490,7 +490,7 @@ h2 {
     text-align: left;
     margin-top: 25px;
     margin-bottom: 10px;
-    margin-left: 90px;
+    margin-left: 55px;
 }
 
 .cookies a {
