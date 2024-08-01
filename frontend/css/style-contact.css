@@ -482,7 +482,7 @@ section .contactForm {
 	top: -10px;
 	width: 90%;
 	height: 90%;
-	background: #581b6b;
+	background: #2c282e;
 	box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
 	border-radius: 30px;
 }
@@ -529,7 +529,7 @@ section .contactForm .form form .inputBox input[type="text"],
 section .contactForm .form form .inputBox input[type="email"],
 section .contactForm .form form .inputBox textarea {
 	border: none;
-	background: #ecd8ec;
+	background: #fff;
 	padding: 10px;
 	border-radius: 15px;
 	color: #0c0d0e;
@@ -543,11 +543,12 @@ section .contactForm .form form .inputBox textarea:focus {
 }
 
 section .contactForm .form form input[type="submit"] {
-	background: #3b034d;
+	background: #621f79;
 	display: inline-block;
 	text-align: center;
 	width: 250px;
 	padding: 10px;
+	margin-top: 10px;
 	border-radius: 15px;
 	color: #ecd8ec;
 	letter-spacing: 1px;
@@ -558,7 +559,7 @@ section .contactForm .form form input[type="submit"] {
 }
 
 section .contactForm .form form input[type="submit"]:hover {
-	background: #0b426c;
+	background: rgb(182, 142, 223);
 }
 
 section .contactForm .info {
@@ -577,7 +578,7 @@ section .contactForm .info .imgBox {
 
 section .contactForm .info .imgBox img {
 	position: relative;
-	top: 0px;
+	top: -50px;
 	left: 0;
 	width: 100%;
 	height: 70%;
@@ -595,7 +596,7 @@ section .contactForm .info .textBox {
 	justify-content: center;
 	align-items: flex-start;
 	flex-direction: column;
-	margin-top: -75px;
+	margin-top: -110px;
 }
 
 section .contactForm .info .textBox .infoContact {
@@ -644,7 +645,7 @@ section .contactForm .info .textBox .infoContact p {
 footer {
     width: 100%;
     padding: 10px;
-	margin-top: 60px;
+	margin-top: 75px;
     background-color: rgb(38, 39, 39);   
 }
 
@@ -771,7 +772,12 @@ footer {
 		z-index: 1001;
 	}
 
-	
+	footer {
+		width: 100%;
+		padding: 10px;
+		margin-top: -50px;
+		background-color: rgb(38, 39, 39);   
+	}
 
 }
 
@@ -1156,6 +1162,10 @@ footer {
 		color: #fff;
 	}
 
+	section .contactForm .form form input[type="submit"]:hover {
+		background: none;
+	}
+
 	/*-----------------------><------------------------*/
 
 	/*--------------------->FOOTER<--------------------*/
@@ -1302,9 +1312,10 @@ footer {
 	footer {
 		width: 100%;
 		padding: 10px;
-		margin-top: 80px;
+		margin-top: -50px;
 		background-color: rgb(38, 39, 39);   
 	}
+
     
 }
 
@@ -1857,6 +1868,7 @@ footer {
 }
 
 @media screen and (max-width: 620px) {
+
 	section {
 		position: relative;
 		width: 100%;
@@ -1875,10 +1887,10 @@ footer {
 		padding: 60px;
 		padding-bottom: 120px;
 		padding-top: 80px;
-		top: -10px;
-		width: 70%;
-		height: 90%;
-		background: #581b6b;
+		top: -100px;
+		width: 90%;
+		height: 70%;
+		background: #2c282e;
 		box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
 		border-radius: 30px;
 	}
@@ -1889,8 +1901,8 @@ footer {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		width: 60%;
-		margin-left: 30px;
+		width: 85%;
+		margin-left: 10px;
 	}
 	
 	section .contactForm .form form {
@@ -1925,7 +1937,7 @@ footer {
 	section .contactForm .form form .inputBox input[type="email"],
 	section .contactForm .form form .inputBox textarea {
 		border: none;
-		background: #ecd8ec;
+		background: #fff;
 		padding: 10px;
 		border-radius: 15px;
 		color: #0c0d0e;
@@ -1939,11 +1951,12 @@ footer {
 	}
 	
 	section .contactForm .form form input[type="submit"] {
-		background: #3b034d;
+		background: #621f79;
 		display: inline-block;
 		text-align: center;
 		width: 250px;
 		padding: 10px;
+		margin-top: 10px;
 		border-radius: 15px;
 		color: #ecd8ec;
 		letter-spacing: 1px;
@@ -1952,33 +1965,15 @@ footer {
 		box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
 		transition: 0.3s;
 	}
-	
 
-	
-	section .contactForm .info {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		
+	footer {
+		width: 100%;
+		padding: 10px;
+		margin-top: -230px;
+		background-color: rgb(38, 39, 39);   
 	}
 	
 	
-	section .contactForm .info .textBox {
-		display: none;
-	}
-	
-	section .contactForm .info .textBox .infoContact {
-		display: flex;
-		justify-content: center;
-		align-items: flex-start;
-		margin-bottom: 10px;
-	}
-	
-	
-	section .contactForm .info .textBox .infoContact p {
-		color: #ecd8ec;
-	}
 }
 
 @media screen and (max-width: 540px) {
@@ -2312,6 +2307,110 @@ footer {
 	   height: 100%;
    }
 
+	section {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		display: grid;
+		place-items: center;
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+
+	section .contactForm {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		gap: 20px;
+		padding: 20px;
+		padding-bottom: 120px;
+		padding-top: 80px;
+		top: -100px;
+		width: 90%;
+		height: 70%;
+		background: #2c282e;
+		box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
+		border-radius: 30px;
+	}
+
+	section .contactForm .form {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 85%;
+		margin-left: 10px;
+	}
+
+	section .contactForm .form form {
+		width: 100%;
+	}
+
+	section .contactForm .form .texto h2 {
+		color: #ecf1f5;
+		font-size: 2em;
+		margin-bottom: 10px;
+		margin-top: -30px;
+	}
+
+	section .contactForm .form .texto p {
+		color: #ecf1f5;
+		line-height: 1.5;
+		margin-bottom: 20px;
+	}
+
+	section .contactForm .form form .inputBox {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+
+	section .contactForm .form form .inputBox label {
+		color: #ecf1f5;
+		font-weight: 700;
+	}
+
+	section .contactForm .form form .inputBox input[type="text"],
+	section .contactForm .form form .inputBox input[type="email"],
+	section .contactForm .form form .inputBox textarea {
+		border: none;
+		background: #fff;
+		padding: 10px;
+		border-radius: 15px;
+		color: #0c0d0e;
+		resize: none;
+	}
+
+	section .contactForm .form form .inputBox input[type="text"]:focus,
+	section .contactForm .form form .inputBox input[type="email"]:focus,
+	section .contactForm .form form .inputBox textarea:focus {
+		outline: 2px solid #0c0d0e;
+	}
+
+	section .contactForm .form form input[type="submit"] {
+		background: #621f79;
+		display: inline-block;
+		text-align: center;
+		width: 250px;
+		padding: 10px;
+		margin-top: 10px;
+		border-radius: 15px;
+		color: #ecd8ec;
+		letter-spacing: 1px;
+		border: none;
+		cursor: pointer;
+		box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
+		transition: 0.3s;
+	}
+
+	footer {
+		width: 100%;
+		padding: 10px;
+		margin-top: -230px;
+		background-color: rgb(38, 39, 39);   
+	}
+
 }
 
 @media screen and (max-width: 430px) {
@@ -2644,6 +2743,110 @@ footer {
 	   width: 25%;
 	   height: 100%;
    }
+
+	section {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		display: grid;
+		place-items: center;
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+
+	section .contactForm {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+		padding: 20px;
+		padding-left: 50px;
+		padding-top: 80px;
+		top: -100px;
+		width: 90%;
+		height: 75%;
+		background: #2c282e;
+		box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
+		border-radius: 30px;
+	}
+
+	section .contactForm .form {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 80%;
+		margin-left: 10px;
+	}
+
+	section .contactForm .form form {
+		width: 100%;
+	}
+
+	section .contactForm .form .texto h2 {
+		color: #ecf1f5;
+		font-size: 2em;
+		margin-bottom: 10px;
+		margin-top: -30px;
+	}
+
+	section .contactForm .form .texto p {
+		color: #ecf1f5;
+		line-height: 1.5;
+		margin-bottom: 20px;
+	}
+
+	section .contactForm .form form .inputBox {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+
+	section .contactForm .form form .inputBox label {
+		color: #ecf1f5;
+		font-weight: 700;
+	}
+
+	section .contactForm .form form .inputBox input[type="text"],
+	section .contactForm .form form .inputBox input[type="email"],
+	section .contactForm .form form .inputBox textarea {
+		border: none;
+		background: #fff;
+		padding: 10px;
+		border-radius: 15px;
+		color: #0c0d0e;
+		resize: none;
+	}
+
+	section .contactForm .form form .inputBox input[type="text"]:focus,
+	section .contactForm .form form .inputBox input[type="email"]:focus,
+	section .contactForm .form form .inputBox textarea:focus {
+		outline: 2px solid #0c0d0e;
+	}
+
+	section .contactForm .form form input[type="submit"] {
+		background: #621f79;
+		display: inline-block;
+		text-align: center;
+		width: 250px;
+		padding: 10px;
+		margin-top: 10px;
+		border-radius: 15px;
+		color: #ecd8ec;
+		letter-spacing: 1px;
+		border: none;
+		cursor: pointer;
+		box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
+		transition: 0.3s;
+	}
+
+	footer {
+		width: 100%;
+		padding: 10px;
+		margin-top: -230px;
+		background-color: rgb(38, 39, 39);   
+	}
 
 }
 
@@ -3427,6 +3630,110 @@ footer {
 		color: white;
 		font-size: 8px;
 	}
+
+	section {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		display: grid;
+		place-items: center;
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+
+	section .contactForm {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 20px;
+		padding: 20px;
+		padding-left: 50px;
+		padding-top: 80px;
+		top: -100px;
+		width: 90%;
+		height: 75%;
+		background: #2c282e;
+		box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
+		border-radius: 30px;
+	}
+
+	section .contactForm .form {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 80%;
+		margin-left: 4px;
+	}
+
+	section .contactForm .form form {
+		width: 100%;
+	}
+
+	section .contactForm .form .texto h2 {
+		color: #ecf1f5;
+		font-size: 2em;
+		margin-bottom: 10px;
+		margin-top: -30px;
+	}
+
+	section .contactForm .form .texto p {
+		color: #ecf1f5;
+		line-height: 1.5;
+		margin-bottom: 20px;
+	}
+
+	section .contactForm .form form .inputBox {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+
+	section .contactForm .form form .inputBox label {
+		color: #ecf1f5;
+		font-weight: 700;
+	}
+
+	section .contactForm .form form .inputBox input[type="text"],
+	section .contactForm .form form .inputBox input[type="email"],
+	section .contactForm .form form .inputBox textarea {
+		border: none;
+		background: #fff;
+		padding: 10px;
+		border-radius: 15px;
+		color: #0c0d0e;
+		resize: none;
+	}
+
+	section .contactForm .form form .inputBox input[type="text"]:focus,
+	section .contactForm .form form .inputBox input[type="email"]:focus,
+	section .contactForm .form form .inputBox textarea:focus {
+		outline: 2px solid #0c0d0e;
+	}
+
+	section .contactForm .form form input[type="submit"] {
+		background: #621f79;
+		display: inline-block;
+		text-align: center;
+		width: 250px;
+		padding: 10px;
+		margin-top: 10px;
+		border-radius: 15px;
+		color: #ecd8ec;
+		letter-spacing: 1px;
+		border: none;
+		cursor: pointer;
+		box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
+		transition: 0.3s;
+	}
+
+	footer {
+		width: 100%;
+		padding: 10px;
+		margin-top: -230px;
+		background-color: rgb(38, 39, 39);   
+	}
 }
 
 @media screen and (max-width:360px) {
@@ -3571,5 +3878,15 @@ footer {
 		margin-right: 25px;
 		margin-top: 5px;
 		font-weight: bold;
+	}
+
+	section .contactForm .form {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 80%;
+		margin-left: 0px;
 	}
 }
