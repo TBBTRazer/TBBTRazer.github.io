@@ -461,6 +461,156 @@ span .cuenta {
 
 /*----------------->FIN HEADER<--------------------*/
 
+section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+section .contactForm {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+	gap: 20px;
+	padding: 60px;
+	padding-bottom: 120px;
+	padding-top: 80px;
+	top: -10px;
+	width: 90%;
+	height: 90%;
+	background: #581b6b;
+	box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
+	border-radius: 30px;
+}
+
+section .contactForm .form {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 85%;
+	margin-left: 30px;
+}
+
+section .contactForm .form form {
+	width: 100%;
+}
+
+section .contactForm .form .texto h2 {
+	color: #ecf1f5;
+	font-size: 2em;
+	margin-bottom: 10px;
+	margin-top: -30px;
+}
+
+section .contactForm .form .texto p {
+	color: #ecf1f5;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+section .contactForm .form form .inputBox {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
+section .contactForm .form form .inputBox label {
+	color: #ecf1f5;
+	font-weight: 700;
+}
+
+section .contactForm .form form .inputBox input[type="text"],
+section .contactForm .form form .inputBox input[type="email"],
+section .contactForm .form form .inputBox textarea {
+	border: none;
+	background: #ecd8ec;
+	padding: 10px;
+	border-radius: 15px;
+	color: #0c0d0e;
+	resize: none;
+}
+
+section .contactForm .form form .inputBox input[type="text"]:focus,
+section .contactForm .form form .inputBox input[type="email"]:focus,
+section .contactForm .form form .inputBox textarea:focus {
+	outline: 2px solid #0c0d0e;
+}
+
+section .contactForm .form form input[type="submit"] {
+	background: #3b034d;
+	display: inline-block;
+	text-align: center;
+	width: 250px;
+	padding: 10px;
+	border-radius: 15px;
+	color: #ecd8ec;
+	letter-spacing: 1px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
+	transition: 0.3s;
+}
+
+section .contactForm .form form input[type="submit"]:hover {
+	background: #0b426c;
+}
+
+section .contactForm .info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+section .contactForm .info .imgBox {
+	position: relative;
+	width: 350px;
+	height: 350px;
+}
+
+section .contactForm .info .imgBox img {
+	position: relative;
+	top: 0px;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	object-fit: cover;
+}
+
+section .contactForm .info .textBox .infoContact .ico {
+	color: #fff;
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+section .contactForm .info .textBox {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-top: -75px;
+}
+
+section .contactForm .info .textBox .infoContact {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 10px;
+}
+
+
+section .contactForm .info .textBox .infoContact p {
+	color: #ecd8ec;
+}
+
+
 /*------------>Boton Flotante Whats app<-----------*/
 
 
@@ -494,6 +644,7 @@ span .cuenta {
 footer {
     width: 100%;
     padding: 10px;
+	margin-top: 60px;
     background-color: rgb(38, 39, 39);   
 }
 
@@ -592,6 +743,20 @@ footer {
     background-color: white;
 }
 
+
+@media screen and (max-width: 1266px){
+	section .contactForm .info {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+	section .contactForm .info .imgBox {
+		display: none;
+	}
+	section .contactForm .info .textBox {
+		display: none;
+	}
+}
+
+
 @media screen and (max-width: 1024px) {
 
 	#cart {
@@ -605,6 +770,8 @@ footer {
 		right: 0;
 		z-index: 1001;
 	}
+
+	
 
 }
 
@@ -1130,6 +1297,13 @@ footer {
 		top: 60px;
 		right: 0;
 		z-index: 1001;
+	}
+
+	footer {
+		width: 100%;
+		padding: 10px;
+		margin-top: 80px;
+		background-color: rgb(38, 39, 39);   
 	}
     
 }
@@ -1680,6 +1854,131 @@ footer {
 		height: 100%;
 	}
 
+}
+
+@media screen and (max-width: 620px) {
+	section {
+		position: relative;
+		width: 100%;
+		height: 100vh;
+		display: grid;
+		place-items: center;
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+	
+	section .contactForm {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+		gap: 20px;
+		padding: 60px;
+		padding-bottom: 120px;
+		padding-top: 80px;
+		top: -10px;
+		width: 70%;
+		height: 90%;
+		background: #581b6b;
+		box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
+		border-radius: 30px;
+	}
+	
+	section .contactForm .form {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 60%;
+		margin-left: 30px;
+	}
+	
+	section .contactForm .form form {
+		width: 100%;
+	}
+	
+	section .contactForm .form .texto h2 {
+		color: #ecf1f5;
+		font-size: 2em;
+		margin-bottom: 10px;
+		margin-top: -30px;
+	}
+	
+	section .contactForm .form .texto p {
+		color: #ecf1f5;
+		line-height: 1.5;
+		margin-bottom: 20px;
+	}
+	
+	section .contactForm .form form .inputBox {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 15px;
+	}
+	
+	section .contactForm .form form .inputBox label {
+		color: #ecf1f5;
+		font-weight: 700;
+	}
+	
+	section .contactForm .form form .inputBox input[type="text"],
+	section .contactForm .form form .inputBox input[type="email"],
+	section .contactForm .form form .inputBox textarea {
+		border: none;
+		background: #ecd8ec;
+		padding: 10px;
+		border-radius: 15px;
+		color: #0c0d0e;
+		resize: none;
+	}
+	
+	section .contactForm .form form .inputBox input[type="text"]:focus,
+	section .contactForm .form form .inputBox input[type="email"]:focus,
+	section .contactForm .form form .inputBox textarea:focus {
+		outline: 2px solid #0c0d0e;
+	}
+	
+	section .contactForm .form form input[type="submit"] {
+		background: #3b034d;
+		display: inline-block;
+		text-align: center;
+		width: 250px;
+		padding: 10px;
+		border-radius: 15px;
+		color: #ecd8ec;
+		letter-spacing: 1px;
+		border: none;
+		cursor: pointer;
+		box-shadow: 1px 9px 20px -5px rgba(0,0,0,.59);
+		transition: 0.3s;
+	}
+	
+
+	
+	section .contactForm .info {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		
+	}
+	
+	
+	section .contactForm .info .textBox {
+		display: none;
+	}
+	
+	section .contactForm .info .textBox .infoContact {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		margin-bottom: 10px;
+	}
+	
+	
+	section .contactForm .info .textBox .infoContact p {
+		color: #ecd8ec;
+	}
 }
 
 @media screen and (max-width: 540px) {
