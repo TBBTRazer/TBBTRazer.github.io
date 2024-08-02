@@ -479,7 +479,7 @@ span .cuenta {
     color: white;
     height: 35px;
     width: 50px;
-    margin-top: -35px;
+    margin-top: 0px;
     opacity: 0;
     transition: opacity 0.5s;
 }
