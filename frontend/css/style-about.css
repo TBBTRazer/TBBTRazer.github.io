@@ -832,6 +832,14 @@ footer {
         background-color: none; /* Color de fondo al hacer clic en pantallas pequeñas */
     }
 
+	.ceos img, .ceos-2 img {
+		width: 400px;
+		height: 300px;
+		margin-left: 25px;
+		object-fit: cover;
+		display: none;
+	}
+
 }
 
 @media screen and (max-width: 930px) {
@@ -1189,6 +1197,8 @@ footer {
     .grid .subcategoria img {
         object-fit: cover;
     }
+
+	
 
 	/*------------>Boton Flotante Whats app<-----------*/
 	.btn-float-wp{
