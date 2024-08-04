@@ -1716,9 +1716,8 @@ footer {
 	.presentacion h2 {
 		position: relative;
 		margin: 20px 0 0;
-		font-size: 3em;
-		color: rgb(76, 44, 120);
-		text-transform: uppercase;
+		font-size: 4em;
+		color: rgb(211, 202, 210);
 		overflow: hidden;
 		animation: textZoomOut 0.5s linear forwards;
 		animation-delay: 6.5s;
@@ -2272,13 +2271,12 @@ footer {
    .presentacion h2 {
 	position: relative;
 	margin: 20px 0 0;
-	font-size: 2.5em;
-	color: rgb(76, 44, 120);
-	text-transform: uppercase;
+	font-size: 4em;
+	color: rgb(211, 202, 210);
 	overflow: hidden;
 	animation: textZoomOut 0.5s linear forwards;
 	animation-delay: 6.5s;
-	}
+}
 
 }
 
@@ -2616,9 +2614,8 @@ footer {
    .presentacion h2 {
 	position: relative;
 	margin: 20px 0 0;
-	font-size: 2em;
-	color: rgb(76, 44, 120);
-	text-transform: uppercase;
+	font-size: 4em;
+	color: rgb(211, 202, 210);
 	overflow: hidden;
 	animation: textZoomOut 0.5s linear forwards;
 	animation-delay: 6.5s;
@@ -2973,7 +2970,6 @@ footer {
 		font-size: 9px;
 	}
 
-
 }
 
 @media screen and (max-width:412px) {
@@ -3269,13 +3265,12 @@ footer {
 	.presentacion h2 {
 		position: relative;
 		margin: 20px 0 0;
-		font-size: 1.8em;
-		color: rgb(76, 44, 120);
-		text-transform: uppercase;
+		font-size: 4em;
+		color: rgb(211, 202, 210);
 		overflow: hidden;
 		animation: textZoomOut 0.5s linear forwards;
 		animation-delay: 6.5s;
-		}
+	}
 
 
 }
@@ -3427,13 +3422,12 @@ footer {
 	.presentacion h2 {
 		position: relative;
 		margin: 20px 0 0;
-		font-size: 1.7em;
-		color: rgb(76, 44, 120);
-		text-transform: uppercase;
+		font-size: 4em;
+		color: rgb(211, 202, 210);
 		overflow: hidden;
 		animation: textZoomOut 0.5s linear forwards;
 		animation-delay: 6.5s;
-		}
+	}
 
     .box_copyright p {
 		margin-top: 5px;
