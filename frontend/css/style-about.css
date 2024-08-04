@@ -825,6 +825,16 @@ footer {
 		z-index: 1001;
 	}
 
+	.presentacion h2 {
+		position: relative;
+		margin: 20px 0 0;
+		font-size: 4em;
+		color: rgb(211, 202, 210);
+		overflow: hidden;
+		animation: textZoomOut 0.5s linear forwards;
+		animation-delay: 6.5s;
+	}
+
 	.card {
         background-color: none; /* Color de fondo en pantallas pequeñas */
     }
@@ -2950,9 +2960,8 @@ footer {
    .presentacion h2 {
 	position: relative;
 	margin: 20px 0 0;
-	font-size: 1.9em;
-	color: rgb(76, 44, 120);
-	text-transform: uppercase;
+	font-size: 4em;
+	color: rgb(211, 202, 210);
 	overflow: hidden;
 	animation: textZoomOut 0.5s linear forwards;
 	animation-delay: 6.5s;
@@ -2963,6 +2972,8 @@ footer {
 		color: white;
 		font-size: 9px;
 	}
+
+
 }
 
 @media screen and (max-width:412px) {
