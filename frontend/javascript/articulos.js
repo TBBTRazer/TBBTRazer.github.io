@@ -5,6 +5,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 25000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:2,
@@ -12,6 +13,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/luffy.jpg",
         descripcion: "lorem",
         precio: 20000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:3,
@@ -19,6 +21,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/nami.jpg",
         descripcion: "lorem",
         precio: 21000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:4,
@@ -26,6 +29,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/brook.jpg",
         descripcion: "lorem",
         precio: 24000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:5,
@@ -33,6 +37,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/chopper.jpg",
         descripcion: "lorem",
         precio: 26000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:6,
@@ -40,6 +45,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/sanji.jpg",
         descripcion: "lorem",
         precio: 23000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:7,
@@ -47,6 +53,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/nico_robin.jpg",
         descripcion: "lorem",
         precio: 15000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:8,
@@ -54,6 +61,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/usopp.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:9,
@@ -61,6 +69,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:10,
@@ -68,6 +77,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:11,
@@ -75,6 +85,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:12,
@@ -82,6 +93,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:13,
@@ -89,6 +101,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:14,
@@ -96,6 +109,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:15,
@@ -103,6 +117,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:16,
@@ -110,6 +125,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:17,
@@ -117,6 +133,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:18,
@@ -124,6 +141,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:19,
@@ -131,6 +149,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:20,
@@ -138,6 +157,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:21,
@@ -145,6 +165,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:22,
@@ -152,6 +173,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:23,
@@ -159,6 +181,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:24,
@@ -166,6 +189,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:25,
@@ -173,6 +197,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:26,
@@ -180,6 +205,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:27,
@@ -187,6 +213,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:28,
@@ -194,6 +221,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:29,
@@ -201,6 +229,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:30,
@@ -208,6 +237,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:31,
@@ -215,6 +245,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },
     {
         id:32,
@@ -222,5 +253,6 @@ const articulosVarios = [
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
+        link: "/frontend/html/all_products/articulo001.html",
     },        
 ]

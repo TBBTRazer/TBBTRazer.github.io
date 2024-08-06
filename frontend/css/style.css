@@ -66,6 +66,37 @@ h1 {
 }
 
 /*------------------------------*/
+#menu input {
+	position: relative;
+	float: left;
+	width: 240px;
+	height: 30px;
+	font-size: 18px;
+	padding: 0 20px;
+	color: #000;
+	outline: none;
+	border: solid 1px silver;
+	border-radius: 20px;
+	margin-top: 5px;
+	margin-left: 100px; 
+}
+
+/*.btn-buscar {
+	position: absolute;
+	top: 13px;
+	right: 615px;
+	background: #440080;
+	width: 30px;
+	height: 30px;
+	border-radius: 0 20px 20px 0px;
+	cursor: pointer;
+}
+
+.btn-buscar .icosearch1 {
+	color: #fff;
+	font-size: 15px;
+}*/
+
 #img-carrito {
 	position: relative;
 	float: right;

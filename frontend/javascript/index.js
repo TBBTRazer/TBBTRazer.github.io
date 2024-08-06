@@ -4,7 +4,7 @@ function crearGridArticulos(productos){
     productos.forEach(producto => {
         const nuevoArticulo = document.createElement("div");
         nuevoArticulo.innerHTML = `
-            <img src=${producto.img}>
+            <a href=${producto.link}><img src=${producto.img}></a>
                 <div class="info">
                     <h3>${producto.nombre}</h3>
                     <p>${producto.descripcion}</p>

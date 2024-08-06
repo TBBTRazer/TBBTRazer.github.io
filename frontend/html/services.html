@@ -296,6 +296,17 @@
 			</div>
 		</nav>
 	</div>
+	<div class="prueba">
+		<h2>Sube y Visualiza un Archivo STL</h2>
+		<input type="file" id="fileInput" accept=".stl">
+		<button id="uploadButton">Subir Archivo</button>
+
+		<div id="progress-container">
+			<div id="progress-bar">0%</div>
+		</div>
+
+		<div id="preview-container"></div>
+	</div>
     
     <div>
         <a href="https://api.whatsapp.com/send?phone=5491150364123" class="btn-float-wp" target="_blank"><i class="demo-icon icon-whatsapp"></i></a>
@@ -380,5 +391,8 @@
     <script src="/frontend/javascript/articulos.js"></script>
     <script src="/frontend/javascript/main.js"></script>
     <script src="/frontend/javascript/cart.js"></script>
+    <script src="/frontend/javascript/calculadora.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/STLLoader.js"></script>
 </body>
 </html>
