@@ -5,7 +5,10 @@
 }
 
 body {
-	background: rgb(234, 219, 235);
+	background-image: url(/frontend/images/about_images/img7.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	font-family: sans-serif;
 }
 
