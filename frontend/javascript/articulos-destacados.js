@@ -1,7 +1,7 @@
 const articulosVarios = [
     {
         id:1,
-        nombre: "Figura Zoro",
+        nombre: "Roronoa Zoro",
         img: "/frontend/images/productos_destacados/zoro.jpg",
         descripcion: "lorem",
         precio: 25000,
@@ -9,7 +9,7 @@ const articulosVarios = [
     },
     {
         id:2,
-        nombre: "Figura Luffy",
+        nombre: "Monkey D. Luffy",
         img: "/frontend/images/productos_destacados/luffy.jpg",
         descripcion: "lorem",
         precio: 20000,
@@ -17,7 +17,7 @@ const articulosVarios = [
     },
     {
         id:3,
-        nombre: "Figura Nami",
+        nombre: "Nami",
         img: "/frontend/images/productos_destacados/nami.jpg",
         descripcion: "lorem",
         precio: 21000,
@@ -25,7 +25,7 @@ const articulosVarios = [
     },
     {
         id:4,
-        nombre: "Figura Brook",
+        nombre: "Brook",
         img: "/frontend/images/productos_destacados/brook.jpg",
         descripcion: "lorem",
         precio: 24000,
@@ -33,7 +33,7 @@ const articulosVarios = [
     },
     {
         id:5,
-        nombre: "Figura Chopper",
+        nombre: "Chopper",
         img: "/frontend/images/productos_destacados/chopper.jpg",
         descripcion: "lorem",
         precio: 26000,
@@ -41,7 +41,7 @@ const articulosVarios = [
     },
     {
         id:6,
-        nombre: "Figura Sanji",
+        nombre: "Vinsmoke Sanji",
         img: "/frontend/images/productos_destacados/sanji.jpg",
         descripcion: "lorem",
         precio: 23000,
@@ -49,7 +49,7 @@ const articulosVarios = [
     },
     {
         id:7,
-        nombre: "Figura Nico Robin",
+        nombre: "Nico Robin",
         img: "/frontend/images/productos_destacados/nico_robin.jpg",
         descripcion: "lorem",
         precio: 15000,
@@ -57,7 +57,7 @@ const articulosVarios = [
     },
     {
         id:8,
-        nombre: "Figura Usopp",
+        nombre: "Usopp",
         img: "/frontend/images/productos_destacados/usopp.jpg",
         descripcion: "lorem",
         precio: 35000,

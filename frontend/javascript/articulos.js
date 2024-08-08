@@ -1,7 +1,7 @@
 const articulosVarios = [
     {
         id:1,
-        nombre: "Figura Zoro",
+        nombre: "Roronoa Zoro",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 25000,
@@ -9,7 +9,7 @@ const articulosVarios = [
     },
     {
         id:2,
-        nombre: "Figura Luffy",
+        nombre: "Monkey D. Luffy",
         img: "/frontend/images/productos_all/luffy.jpg",
         descripcion: "lorem",
         precio: 20000,
@@ -17,7 +17,7 @@ const articulosVarios = [
     },
     {
         id:3,
-        nombre: "Figura Nami",
+        nombre: "Nami",
         img: "/frontend/images/productos_all/nami.jpg",
         descripcion: "lorem",
         precio: 21000,
@@ -25,7 +25,7 @@ const articulosVarios = [
     },
     {
         id:4,
-        nombre: "Figura Brook",
+        nombre: "Brook",
         img: "/frontend/images/productos_all/brook.jpg",
         descripcion: "lorem",
         precio: 24000,
@@ -33,7 +33,7 @@ const articulosVarios = [
     },
     {
         id:5,
-        nombre: "Figura Chopper",
+        nombre: "Chopper",
         img: "/frontend/images/productos_all/chopper.jpg",
         descripcion: "lorem",
         precio: 26000,
@@ -41,7 +41,7 @@ const articulosVarios = [
     },
     {
         id:6,
-        nombre: "Figura Sanji",
+        nombre: "Vinsmoke Sanji",
         img: "/frontend/images/productos_all/sanji.jpg",
         descripcion: "lorem",
         precio: 23000,
@@ -49,7 +49,7 @@ const articulosVarios = [
     },
     {
         id:7,
-        nombre: "Figura Nico Robin",
+        nombre: "Nico Robin",
         img: "/frontend/images/productos_all/nico_robin.jpg",
         descripcion: "lorem",
         precio: 15000,
@@ -57,7 +57,7 @@ const articulosVarios = [
     },
     {
         id:8,
-        nombre: "Figura Usopp",
+        nombre: "Usopp",
         img: "/frontend/images/productos_all/usopp.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -65,7 +65,7 @@ const articulosVarios = [
     },
     {
         id:9,
-        nombre: "Figura Jimbei",
+        nombre: "Jimbei",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -73,7 +73,7 @@ const articulosVarios = [
     },
     {
         id:10,
-        nombre: "Figura Franky",
+        nombre: "Franky",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -81,7 +81,7 @@ const articulosVarios = [
     },
     {
         id:11,
-        nombre: "Figura Naruto Uzumaki",
+        nombre: "Naruto Uzumaki",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -89,7 +89,7 @@ const articulosVarios = [
     },
     {
         id:12,
-        nombre: "Figura Sasuke Uchiha",
+        nombre: "Sasuke Uchiha",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -97,7 +97,7 @@ const articulosVarios = [
     },
     {
         id:13,
-        nombre: "Figura Sakura Haruno",
+        nombre: "Sakura Haruno",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -105,7 +105,7 @@ const articulosVarios = [
     },
     {
         id:14,
-        nombre: "Figura Kakashi Hatake",
+        nombre: "Kakashi Hatake",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -113,7 +113,7 @@ const articulosVarios = [
     },
     {
         id:15,
-        nombre: "Figura Kurenai Yūhi",
+        nombre: "Kurenai Yūhi",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -121,7 +121,7 @@ const articulosVarios = [
     },
     {
         id:16,
-        nombre: "Figura Hinata Hyūga",
+        nombre: "Hinata Hyūga",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -129,7 +129,7 @@ const articulosVarios = [
     },
     {
         id:17,
-        nombre: "Figura Shino Aburame",
+        nombre: "Shino Aburame",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -137,7 +137,7 @@ const articulosVarios = [
     },
     {
         id:18,
-        nombre: "Figura Kiba Inuzuka",
+        nombre: "Kiba Inuzuka",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -145,7 +145,7 @@ const articulosVarios = [
     },
     {
         id:19,
-        nombre: "Figura Asuma Sarutobi",
+        nombre: "Asuma Sarutobi",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -153,7 +153,7 @@ const articulosVarios = [
     },
     {
         id:20,
-        nombre: "Figura Shikamaru Nara",
+        nombre: "Shikamaru Nara",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -161,7 +161,7 @@ const articulosVarios = [
     },
     {
         id:21,
-        nombre: "Figura Chōji Akimichi",
+        nombre: "Chōji Akimichi",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -169,7 +169,7 @@ const articulosVarios = [
     },
     {
         id:22,
-        nombre: "Figura Ino Yamanaka",
+        nombre: "Ino Yamanaka",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -177,7 +177,7 @@ const articulosVarios = [
     },
     {
         id:23,
-        nombre: "Figura Might Guy",
+        nombre: "Might Guy",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -185,7 +185,7 @@ const articulosVarios = [
     },
     {
         id:24,
-        nombre: "Figura Rock Lee",
+        nombre: "Rock Lee",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -193,7 +193,7 @@ const articulosVarios = [
     },
     {
         id:25,
-        nombre: "Figura Neji Hyüga",
+        nombre: "Neji Hyüga",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -201,7 +201,7 @@ const articulosVarios = [
     },
     {
         id:26,
-        nombre: "Figura Ten Ten",
+        nombre: "Ten Ten",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -209,7 +209,7 @@ const articulosVarios = [
     },
     {
         id:27,
-        nombre: "Figura Jiraiya",
+        nombre: "Jiraiya",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -217,7 +217,7 @@ const articulosVarios = [
     },
     {
         id:28,
-        nombre: "Figura Tsunade",
+        nombre: "Tsunade",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -225,7 +225,7 @@ const articulosVarios = [
     },
     {
         id:29,
-        nombre: "Figura Orochimaru",
+        nombre: "Orochimaru",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -233,7 +233,7 @@ const articulosVarios = [
     },
     {
         id:30,
-        nombre: "Figura Gara",
+        nombre: "Gara",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -241,7 +241,7 @@ const articulosVarios = [
     },
     {
         id:31,
-        nombre: "Figura Kankuro",
+        nombre: "Kankuro",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
@@ -249,7 +249,7 @@ const articulosVarios = [
     },
     {
         id:32,
-        nombre: "Figura Temari",
+        nombre: "Temari",
         img: "/frontend/images/productos_all/zoro.jpg",
         descripcion: "lorem",
         precio: 35000,
