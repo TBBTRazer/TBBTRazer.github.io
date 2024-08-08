@@ -1666,10 +1666,16 @@ footer {
 		z-index: 1001;
 	}
 
+	.container-related-products h2 {
+		text-align: center;
+		margin-bottom: 30px;
+		margin-top: 100px;
+	}
+
 	footer {
 		width: 100%;
 		padding: 10px;
-		margin-top: -50px;
+		margin-top: 95px;
 		background-color: rgb(38, 39, 39);   
 	}
 
@@ -2037,12 +2043,11 @@ footer {
 		color: #fff;
 	}
 
-	/*-----------------------><------------------------*/
-
 	/*--------------------->FOOTER<--------------------*/
 	footer {
 		width: 100%;
 		padding: 10px;
+		margin-top: 95px;
 		background-color: rgb(38, 39, 39);   
 	}
 
@@ -2412,7 +2417,7 @@ footer {
 	.container-related-products h2 {
 		text-align: center;
 		margin-bottom: 30px;
-		margin-top: 450px;
+		margin-top: 250px;
 	}
 	
 	.card-list-products {
@@ -4117,7 +4122,7 @@ footer {
 	.container-related-products h2 {
 		text-align: center;
 		margin-bottom: 30px;
-		margin-top: 800px;
+		margin-top: 600px;
 	}
 
 	.card-list-products {
@@ -4713,7 +4718,7 @@ footer {
 	.container-related-products h2 {
 		text-align: center;
 		margin-bottom: 30px;
-		margin-top: 800px;
+		margin-top: 600px;
 	}
 
 	.card-list-products {
