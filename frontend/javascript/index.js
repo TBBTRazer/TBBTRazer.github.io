@@ -10,7 +10,7 @@ function crearGridArticulos(productos){
                     <p>${producto.descripcion}</p>
                     <div class="precio">
                         <p>$${producto.precio}</p>
-                    </div>
+                </div>
             <button class="agregar-carrito">Agregar al carrito</button>
             <button class="comprar">Comprar</button>
         `
@@ -27,7 +27,6 @@ const contenedorProductos = document.getElementById("lista_de_productos");
 const unidadesElement = document.getElementById("unidades");
 const precioElement = document.getElementById("precio");
 const vaciarCarritoElement = document.getElementById("vaciar");
-/*const carritoVacioElement = document.getElementById("cart-vacio");*/
 const totalesElement = document.getElementById("totales");
 
 function crearCartArticulos(){

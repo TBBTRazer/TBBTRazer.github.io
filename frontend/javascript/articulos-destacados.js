@@ -5,7 +5,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_destacados/zoro.jpg",
         descripcion: "lorem",
         precio: 25000,
-        link: "/frontend/html/all_products/articulo001.html",
+        link: "/frontend/html/productos-individuales/articulo001.html",
     },
     {
         id:2,
@@ -13,7 +13,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_destacados/luffy.jpg",
         descripcion: "lorem",
         precio: 20000,
-        link: "/frontend/html/all_products/articulo001.html",
+        link: "/frontend/html/productos-individuales/articulo001.html",
     },
     {
         id:3,
@@ -21,7 +21,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_destacados/nami.jpg",
         descripcion: "lorem",
         precio: 21000,
-        link: "/frontend/html/all_products/articulo001.html",
+        link: "/frontend/html/productos-individuales/articulo001.html",
     },
     {
         id:4,
@@ -29,7 +29,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_destacados/brook.jpg",
         descripcion: "lorem",
         precio: 24000,
-        link: "/frontend/html/all_products/articulo001.html",
+        link: "/frontend/html/productos-individuales/articulo001.html",
     },
     {
         id:5,
@@ -37,7 +37,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_destacados/chopper.jpg",
         descripcion: "lorem",
         precio: 26000,
-        link: "/frontend/html/all_products/articulo001.html",
+        link: "/frontend/html/productos-individuales/articulo001.html",
     },
     {
         id:6,
@@ -45,7 +45,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_destacados/sanji.jpg",
         descripcion: "lorem",
         precio: 23000,
-        link: "/frontend/html/all_products/articulo001.html",
+        link: "/frontend/html/productos-individuales/articulo001.html",
     },
     {
         id:7,
@@ -53,7 +53,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_destacados/nico_robin.jpg",
         descripcion: "lorem",
         precio: 15000,
-        link: "/frontend/html/all_products/articulo001.html",
+        link: "/frontend/html/productos-individuales/articulo001.html",
     },
     {
         id:8,
@@ -61,7 +61,7 @@ const articulosVarios = [
         img: "/frontend/images/productos_destacados/usopp.jpg",
         descripcion: "lorem",
         precio: 35000,
-        link: "/frontend/html/all_products/articulo001.html",
+        link: "/frontend/html/productos-individuales/articulo001.html",
     },
          
 ]
